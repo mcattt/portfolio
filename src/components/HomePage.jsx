@@ -23,10 +23,10 @@ const HomePage = () => {
 
     return (
         <div id="home">
-            <div className='flex flex-col items-center mt-28 '>
+            <div className='flex flex-col mt-28 '>
                 <h1
-                    className=" text-[3.4rem]  leading-tight
-                    cursor-default font-extradica
+                    className=" text-[3.4rem]  leading-tight ml-2
+                    cursor-default font-extradica animate-gradient
                     
                     text-transparent bg-clip-text  transition-all duration-500 bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start bg-size-200 bg-pos-0 hover:bg-pos-100"
                 >

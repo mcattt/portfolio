@@ -27,7 +27,15 @@ export default {
       screens: {
         "desktop": "900px",
       },
-     
+      animation: {
+        'gradient': 'background 1s',
+      },
+      keyframes: {
+        'gradientAnimation': {
+          '0%': { 'background-position': '0%' },
+          '100%': { 'background-position': '100%' },
+        },
+      },
     },
   },
   plugins: [],
