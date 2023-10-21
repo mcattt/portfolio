@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     extend: {
-      colors:{
+      colors: {
         "gradient-1-start": " #8797FF",
         "gradient-1-end": "#FF9CEB",
         "gradient-2-start": "#6630FF",
@@ -20,13 +20,14 @@ export default {
         'pos-0': '0% 0%',
         'pos-100': '100% 100%',
       },
-      fontFamily:{
-        "extradica" : ['extradica', 'sans-serif'],
-        "sans" : ['steppe', 'sans-serif'],
+      fontFamily: {
+        "extradica": ['extradica', 'sans-serif'],
+        "sans": ['steppe', 'sans-serif'],
       },
-      screens:{
+      screens: {
         "desktop": "900px",
-      }
+      },
+     
     },
   },
   plugins: [],
