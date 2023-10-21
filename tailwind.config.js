@@ -19,6 +19,10 @@ export default {
         'pos-0': '0% 0%',
         'pos-100': '100% 100%',
       },
+      fontFamily:{
+        "extradica" : ['extradica', 'sans-serif'],
+        "sans" : ['steppe', 'sans-serif'],
+      }
     },
   },
   plugins: [],
