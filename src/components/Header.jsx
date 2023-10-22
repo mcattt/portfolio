@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <div>
-            <header className=" w-full fixed desktop:static top-0 ">
+            <header className=" w-full fixed  top-0 ">
                 <nav>
                     <ul className="bg-background bg-opacity-80 desktop:bg-transparent py-3 flex  justify-end pr-6 z-999999">
                         <li onClick={() => scrollToSection('contact')}>
