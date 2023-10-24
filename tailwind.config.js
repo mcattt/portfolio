@@ -36,7 +36,16 @@ export default {
           '100%': { 'background-position': '100%' },
         },
       },
+      animation: {
+        'custom-translate': 'custom-translate 300ms ease-in-out',
+      },
+      keyframes: {
+        'custom-translate': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
     },
-  },
-  plugins: [],
+},
+plugins: [],
 }
