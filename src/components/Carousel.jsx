@@ -6,18 +6,39 @@ import imgGame01 from "../assets/images/game-1.png";
 
 const items = [
     {
-        description: "01",
+        title: "Movie Database",
+        tools: "react // tailwind // vite",
+        description: "A database created using React and the TMDB API",
+        //maybe do carousel for this as well?
         img: imgDataBase01,
+        liveSiteButton: "google.ca",
+        gitHubButton: "google.ca",
+        highlights: "-thing 1 - thing 2",
+        learned: "lorem ipsum",
 
     },
     {
-        description: "02",
+        title: "The Pokemon Name Game",
+        tools: "javascript // css // html",
+        description: "Pokemon word guessing game",
+        //maybe do carousel for this as well?
         img: imgDataBase02,
+        liveSiteButton: "https://www.google.ca",
+        gitHubButton: "google.ca",
+        highlights: "-thing 1 - thing 2",
+        learned: "lorem ipsum",
 
     },
     {
-        description: "03",
+        title: "Coming Soon",
+        tools: " ~ // ~ // ",
+        description: "",
+        //maybe do carousel for this as well?
         img: imgGame01,
+        liveSiteButton: "google.ca",
+        gitHubButton: "google.ca",
+        highlights: "-thing 1 - thing 2",
+        learned: "lorem ipsum",
 
     }
 ]
@@ -35,10 +56,12 @@ export const Carousel = () => {
         setActiveIndex(newIndex);
     }
     return (
-        <div className="w-[700px] flex flex-col justify-center overflow-hidden">
-            <div className=" whitespace-nowrap transition shadow animate-custom-translate" >
-                {items.map((item, index) => {
-                    return <CarouselItem key={index} item={item} />;
+        <div className="w-[100%] flex flex-col justify-center overflow-hidden">
+            <div className=" whitespace-nowrap transition shadow transform duration-300"
+                style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+            >
+                {items.map((item) => {
+                    return <CarouselItem item={item} />;
                 })}
 
             </div>
