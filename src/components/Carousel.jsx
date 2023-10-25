@@ -56,7 +56,7 @@ export const Carousel = () => {
         setActiveIndex(newIndex);
     }
     return (
-        <div className="w-[100%] flex flex-col justify-center overflow-hidden">
+        <div className=" flex flex-col justify-center overflow-hidden">
             <div className=" whitespace-nowrap transition shadow transform duration-300"
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
             >

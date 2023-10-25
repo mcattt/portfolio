@@ -1,20 +1,28 @@
 import React from "react";
 import Accordion from "./Accordion";
 export const CarouselItem = ({ item }) => {
-    return <div className="inline-flex items-center  flex-col justify-center h-[490px] w-[100%]  bg-gray-500">
-        <div><h2>{item.title}</h2></div>
-        <div>{item.tools}</div>
-        <div className="w-[250px] mx-[20px]">
-            <img src={item.img} alt="" />
-        </div>
-        <div className="  text-[1.15rem] mx-[40px] py-[20px] whitespace-normal "><p>{item.description}</p></div>
-        <div>
-            <button>
-                <a href={item.liveSiteButton}>Live Site</a>
-            </button>
-            <button>{<a href={item.gitHubButton}>Github Repo</a>}</button>
-        </div>
+    return <div className="inline-flex flex-col justify-center bg-gray-500">
+        <div className=" lg:grid lg:grid-cols-2">
+            <div >
+                <div><h2>{item.title}</h2></div>
+                <div>{item.tools}</div>
+            </div>
+            <div className="">
+                <img src={item.img} alt="" className="w-full h-auto" />
+                <div className="flex justify-evenly my-4  text-[8px]">
+                    <button className="border" >
+                        <a href={item.liveSiteButton}>Live Site</a>
+                    </button>
+                    <button className="border" >{<a href={item.gitHubButton}>Github Repo</a>}</button>
+                </div>
+            </div>
+            <div>
 
+
+                <div className=" break-normal"><p>{item.description}</p></div>
+
+            </div>
+        </div>
         <div className="border-[0.5px] rounded-t-md px-1">
             <Accordion title="Highlights" content={item.highlights} />
         </div>
