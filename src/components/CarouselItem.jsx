@@ -48,14 +48,24 @@ export const CarouselItem = ({ item }) => {
 
             </div>
         </div>
-        <div className=" mx-auto w-[120px]  lg:w-2/5">
-            <div className="border-[0.5px] rounded-t-md px-1 
-            
+        <div className=" mx-auto w-[120px]  lg:w-2/5 pb-10 
+        
+       
+        
+        ">
+            <div className=" rounded-t-md 
+    bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start pt-[1px] px-[1px]
             ">
-                <Accordion title="Highlights" content={item.highlights} />
+                <div className=" bg-gray-800 rounded-t-md px-1 ">
+                    <Accordion title="Highlights" content={item.highlights} />
+                </div>
             </div>
-            <div className="border-[0.5px] rounded-b-md border-t-0 px-1 mb-10 ">
-                <Accordion title="What I learned" content={item.learned} />
+            <div className=" rounded-b-md 
+    bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start p-[1px] 
+            ">
+                <div className=" bg-gray-800 rounded-b-md px-1 ">
+                    <Accordion title="What I learned" content={item.learned} />
+                </div>
             </div>
         </div>
     </div >
