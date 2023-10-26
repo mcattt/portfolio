@@ -6,9 +6,9 @@ const Accordion = ({ title, content }) => {
 
     return (
         <div >
-            <div className='flex flex-row items-center justify-between   w-36' onClick={() => setIsActive(!isActive)}>
+            <div className='flex flex-row items-center justify-between ' onClick={() => setIsActive(!isActive)}>
                 <div className=''>{title}</div>
-                <div className="w-2">{isActive ? <img src={upArrow} alt="" /> : <img src={downArrow} alt="" />}</div>
+                <div className="ml-2 w-2">{isActive ? <img src={upArrow} alt="" /> : <img src={downArrow} alt="" />}</div>
             </div>
             {isActive && <div className="">{content}</div>}
         </div >

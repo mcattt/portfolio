@@ -36,16 +36,19 @@ export default {
           '100%': { 'background-position': '100%' },
         },
       },
-      animation: {
-        'custom-translate': 'custom-translate 300ms ease-in-out',
+      transitionProperty: {
+        'width': 'width', // Add a custom transition for the 'width' property
+        // You can add more custom transition properties as needed
       },
-      keyframes: {
-        'custom-translate': {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
-        },
+      transitionDuration: {
+        '200': '200ms', // Define the duration for 'width' transition
+      },
+      transitionTimingFunction: {
+        'ease': 'ease', // Define the timing function
       },
     },
-},
-plugins: [],
+  },
+
+
+  plugins: [],
 }

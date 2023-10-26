@@ -7,7 +7,7 @@ import imgGame01 from "../assets/images/game-1.png";
 const items = [
     {
         title: "Movie Database",
-        tools: "react // tailwind // vite",
+        tools: ["react", "tailwind", "vite"],
         description: "A database created using React and the TMDB API",
         //maybe do carousel for this as well?
         img: imgDataBase01,
@@ -19,7 +19,7 @@ const items = [
     },
     {
         title: "The Pokemon Name Game",
-        tools: "javascript // css // html",
+        tools: ["javascript", " css", "html"],
         description: "Pokemon word guessing game",
         //maybe do carousel for this as well?
         img: imgDataBase02,
@@ -31,7 +31,7 @@ const items = [
     },
     {
         title: "Coming Soon",
-        tools: " ~ // ~ // ",
+        tools: [],
         description: "",
         //maybe do carousel for this as well?
         img: imgGame01,
@@ -56,8 +56,8 @@ export const Carousel = () => {
         setActiveIndex(newIndex);
     }
     return (
-        <div className=" flex flex-col justify-center overflow-hidden">
-            <div className=" whitespace-nowrap transition shadow transform duration-300"
+        <div className=" flex flex-col justify-center overflow-hidden ">
+            <div className=" whitespace-nowrap transition  transform duration-300"
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
             >
                 {items.map((item) => {
@@ -66,11 +66,7 @@ export const Carousel = () => {
 
             </div>
             <div className="flex justify-evenly">
-                <button onClick={() =>
-                    updateIndex(activeIndex - 1)
-                } className="bg-none border-none cursor-pointer mt-[20px]">
-                    <span>arrow_left</span>
-                </button>
+
                 <div className="flex justify-around items-center mt-[20px]">
                     {items.map((item, index) => {
                         return (
@@ -78,10 +74,10 @@ export const Carousel = () => {
                                 onClick={() => {
                                     updateIndex(index);
                                 }}
-                                className={`border-none cursor-pointer m-[5px] bg-none ${index === activeIndex ? 'text-green-200' : 'text-red-200'
+                                className={`flex w-2 h-2 transition-width rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-green-200 w-3' : 'bg-red-200 w-2'
                                     }`}
                             >
-                                <span>radio_button_checked</span>
+
                             </button>
                         );
                     })}
@@ -90,11 +86,7 @@ export const Carousel = () => {
 
 
             </div>
-            <button onClick={() =>
-                updateIndex(activeIndex + 1)
-            } className="bg-none border-none cursor-pointer mt-[20px]">
-                <span>arrow_right</span>
-            </button>
+
         </div >
 
     );

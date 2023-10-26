@@ -45,7 +45,7 @@ const HomePage = () => {
 
                 <div className='flex items-center flex-col  mt-20'>
                     <p className='mb-6 text-xs' >check out my work</p>
-                    <img id="arrow-ani" onClick={() => scrollToSection('projects')} src={downArrow} alt="black arrow pointing down" className=' w-4 animate-bounce' />
+                    <img id="arrow-ani" onClick={() => scrollToSection('projects')} src={downArrow} alt="black arrow pointing down" className=' w-4 animate-bounce mb-24' />
                 </div>
             </div>
         </div >
