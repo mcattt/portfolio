@@ -26,7 +26,7 @@ export const CarouselItem = ({ item }) => {
 
     const formattedTools = formatTools(item.tools);
 
-return <div className="inline-flex flex-col justify-center w-[100%]  ">
+    return <div className="inline-flex flex-col justify-center w-[100%] z-[-9999] ">
         <div className=" lg:grid lg:grid-cols-2">
             <div className="mb-5 ml-2 whitespace-normal">
                 <div className=" text-base"><h2>{item.title}</h2></div>
@@ -49,7 +49,9 @@ return <div className="inline-flex flex-col justify-center w-[100%]  ">
             </div>
         </div>
         <div className=" mx-auto w-[120px]  lg:w-2/5">
-            <div className="border-[0.5px] rounded-t-md px-1 ">
+            <div className="border-[0.5px] rounded-t-md px-1 
+            
+            ">
                 <Accordion title="Highlights" content={item.highlights} />
             </div>
             <div className="border-[0.5px] rounded-b-md border-t-0 px-1 mb-10 ">
