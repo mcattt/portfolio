@@ -11,7 +11,7 @@ export default {
         "gradient-1-end": "#FF9CEB",
         "gradient-2-start": "#6630FF",
         "gradient-2-end": "#4EB2FF",
-        "background": "#212121",
+        "background": "#111111",
       },
       backgroundSize: {
         'size-200': '200% 200%',

@@ -10,9 +10,11 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Header from './components/Header';
+import BackgroundBlur from './components/BackgroundBlur';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <BackgroundBlur />
     <Header />
     <Nav />
     <HomePage />

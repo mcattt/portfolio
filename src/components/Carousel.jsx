@@ -67,14 +67,14 @@ export const Carousel = () => {
             </div>
             <div className="flex justify-evenly">
 
-                <div className="flex justify-around items-center mt-[20px]">
+                <div className="flex justify-around items-center ">
                     {items.map((item, index) => {
                         return (
                             <button
                                 onClick={() => {
                                     updateIndex(index);
                                 }}
-                                className={`flex w-2 h-2 transition-width rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-green-200 w-3' : 'bg-red-200 w-2'
+                                className={`flex w-2 h-2 transition-width rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-end w-3' : 'bg-gray-400 w-2'
                                     }`}
                             >
 
