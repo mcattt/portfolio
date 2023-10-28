@@ -74,7 +74,7 @@ export const Carousel = () => {
                                 onClick={() => {
                                     updateIndex(index);
                                 }}
-                                className={`flex w-2 h-2 transition-width rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-end w-3' : 'bg-gray-400 w-2'
+                                className={`flex w-2 h-2 transition-width rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-end w-[30px] h-[14px] ' : 'bg-gray-400 w-[14px] h-[14px]'
                                     }`}
                             >
 

@@ -7,9 +7,9 @@ const Header = () => {
 
     return (
         <div>
-            <header className=" w-full fixed  top-0  bg-background z-[9999]">
+            <header className=" w-full fixed  top-0  z-[9999] ">
                 <nav>
-                    <ul className=" my-1 float-right bg-background w-12  desktop:bg-transparent  flex gap-2  ">
+                    <ul className=" py-1 px-1 float-right bg-opacity-50 rounded-bl-xl bg-background w-24  desktop:bg-transparent  flex gap-2  ">
                         <li>
                             <img src={email} alt="" />
 

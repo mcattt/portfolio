@@ -4,8 +4,8 @@ const Projects = () => {
 
 
     return (
-        <div id="projects" className="">
-            <h2 className="ml-1 mb-3 text-xl font-extradica">Projects</h2>
+        <div id="projects" className="mb-[5rem]">
+            <h2 className="ml-1 mb-10 text-5xl font-extradica">Projects</h2>
             <Carousel />
         </div>
     );
