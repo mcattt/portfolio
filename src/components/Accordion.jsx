@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import downArrow from "../assets/images/arrow-down.png";
-import upArrow from "../assets/images/arrow-up.png";
 const Accordion = ({ title, content }) => {
     const [isActive, setIsActive] = useState(false);
 
