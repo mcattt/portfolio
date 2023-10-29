@@ -1,4 +1,7 @@
+import { useTabContext } from './TabContext';
 const About = () => {
+    const { activeTab, activeTabHistory } = useTabContext();
+    const hasBeenActive = activeTabHistory['about'];
     const skills = [
         { name: "React", icon: "devicon-react-original" },
         { name: "jQuery", icon: "devicon-jquery-plain" },
@@ -16,7 +19,7 @@ const About = () => {
     ];
 
     return (
-        <div id="about" className="mb-[200px]">
+        <div id="about" className={`min-h-screen transition-all duration-1000 ${hasBeenActive ? 'opacity-100' : 'opacity-0'}`}>
             <h2 className="ml-2 mb-3 text-5xl font-extradica">About Me</h2>
             <div className="px-2">
                 <p className="text-lg px-3 mt-10">

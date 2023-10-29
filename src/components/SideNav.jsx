@@ -1,42 +1,7 @@
-import React, { useState, useEffect } from 'react';
-
+import React from 'react';
+import { useTabContext } from './TabContext';
 const SideNav = () => {
-  const [activeTab, setActiveTab] = useState('home');
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const homeSection = document.getElementById('home');
-      const aboutSection = document.getElementById('about');
-      const projectsSection = document.getElementById('projects');
-      const contactSection = document.getElementById('contact');
-      const scrollTop = window.scrollY;
-
-      if (
-        scrollTop >= homeSection.offsetTop &&
-        scrollTop < projectsSection.offsetTop
-      ) {
-        setActiveTab('home');
-
-      } else if (
-        scrollTop >= projectsSection.offsetTop &&
-        scrollTop < aboutSection.offsetTop
-      ) {
-        setActiveTab('projects');
-      } else if (
-        scrollTop >= aboutSection.offsetTop &&
-        scrollTop < contactSection.offsetTop
-      ) {
-        setActiveTab('about');
-      } else if (scrollTop >= contactSection.offsetTop) {
-        setActiveTab('contact');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const { activeTab, setActiveTab } = useTabContext();
 
   return (
     <div>
