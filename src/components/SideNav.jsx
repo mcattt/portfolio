@@ -16,6 +16,7 @@ const SideNav = () => {
         scrollTop < projectsSection.offsetTop
       ) {
         setActiveTab('home');
+
       } else if (
         scrollTop >= projectsSection.offsetTop &&
         scrollTop < aboutSection.offsetTop
@@ -62,3 +63,8 @@ const SideNav = () => {
 };
 
 export default SideNav;
+
+
+
+
+

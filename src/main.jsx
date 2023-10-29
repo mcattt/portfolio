@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 // import Carousel from './components/Carousel';
 import Footer from "./components/Footer";
-import Nav from "./components/Nav";
+import SideNav from "./components/SideNav";
 import Header from './components/Header';
 import BackgroundBlur from './components/BackgroundBlur';
 
@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BackgroundBlur />
     <Header />
-    <Nav />
+    <SideNav />
     <HomePage />
     <Projects />
     <About />

@@ -45,7 +45,7 @@ const items = [
 
 export const Carousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
-
+ 
 
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
