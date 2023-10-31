@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CarouselItem } from "./CarouselItem";
+
 import imgDataBase01 from "../assets/images/database-1.png";
 import imgDataBase02 from "../assets/images/database-2.png";
 import imgGame01 from "../assets/images/game-1.png";
@@ -45,7 +46,21 @@ const items = [
 
 export const Carousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
- 
+
+
+    function isActive(num) {
+        if (num === activeIndex) {
+            return (
+                <span className="  text-white">{num + 1}</span>
+            );
+        } else {
+            return (
+                <span className=" text-black">{num + 1}</span>
+            );
+        }
+    }
+
+
 
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
@@ -74,11 +89,11 @@ export const Carousel = () => {
                                 onClick={() => {
                                     updateIndex(index);
                                 }}
-                                className={`flex w-2 h-2 transition-width rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-end w-[30px] h-[14px] ' : 'bg-gray-400 w-[14px] h-[14px]'
+                                className={`flex w-2 h-2 text-[4px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-end w-[26px] h-[10px] ' : 'bg-gray-400 w-[10px] h-[10px]'
                                     }`}
                             >
 
-                            </button>
+                                {isActive(index)}</button>
                         );
                     })}
                 </div>

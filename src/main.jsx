@@ -6,7 +6,6 @@ import HomePage from './components/HomePage.jsx'
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
-// import Carousel from './components/Carousel';
 import Footer from "./components/Footer";
 import SideNav from "./components/SideNav";
 import Header from './components/Header';
@@ -15,7 +14,7 @@ import { TabProvider } from './components/TabContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BackgroundBlur />
+    {/* <BackgroundBlur /> */}
     <TabProvider>
       <Header />
       <SideNav />

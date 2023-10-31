@@ -15,7 +15,7 @@ const Projects = () => {
             id="projects"
             className={`min-h-screen transition-all duration-1000 ${hasBeenActive ? 'opacity-100' : 'opacity-0'}`}
         >
-            <h2 className="ml-1 mb-10 text-5xl font-extradica">Projects</h2>
+            <h2 className="ml-1 mb-8 text-2xl font-extradica">Projects</h2>
             <Carousel />
         </div>
     );
