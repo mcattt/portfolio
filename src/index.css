@@ -13,3 +13,155 @@
     font-family: "steppe";
     src: url(/fonts/steppe/SteppeTrial-Regular-BF64acc0f336e82.woff);
 }
+
+
+
+
+
+/* For shapes moving around the top */
+.bg-shape-1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    position: relative;
+    animation: one 45s infinite;
+}
+
+.bg-shape-2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    position: relative;
+    animation: two 45s infinite;
+}
+
+.bg-shape-3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    position: relative;
+    animation: three 45s infinite;
+}
+/* Class names for shapes moving in the middle */
+.bg-shape-4 {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    position: relative;
+    animation: four 45s infinite;
+}
+
+.bg-shape-5 {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    position: relative;
+    animation: five 45s infinite;
+}
+
+.bg-shape-6 {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    position: relative;
+    animation: six 45s infinite;
+}
+/* For shapes moving around the bottom */
+.bg-shape-7 {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    position: relative;
+    animation: seven 45s infinite;
+}
+
+.bg-shape-8 {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    position: relative;
+    animation: eight 45s infinite;
+}
+
+.bg-shape-9 {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    position: relative;
+    animation: nine 45s infinite;
+}
+/* Keyframes for shapes moving around the top of the screen */
+/* Keyframes for shapes moving around the top of the screen */
+@keyframes one {
+    0% {left: -25%; top: -25%}
+    25% {left: 25%; top: 25%}
+    50% {left: -15%; top: 15%}
+    75% {left: 15%; top: 5%}
+    100% {left: -25%; top: -25%}
+}
+
+@keyframes two {
+    0% {left: -15%; top: -15%}
+    25% {left: 5%; top: 5%}
+    50% {left: -10%; top: -10%}
+    75% {left: 10%; top: -20%}
+    100% {left: -15%; top: -15%}
+}
+
+@keyframes three {
+    0% {left: 15%; top: -5%}
+    25% {left: -5%; top: 10%}
+    50% {left: 10%; top: -10%}
+    75% {left: -5%; top: -15%}
+    100% {left: 15%; top: -5%}
+}
+
+/* Keyframes for shapes moving around the middle of the screen */
+@keyframes four {
+    0% {left: -20%; top: 30%}
+    25% {left: 10%; top: 40%}
+    50% {left: -30%; top: 50%}
+    75% {left: 30%; top: 20%}
+    100% {left: -20%; top: 30%}
+}
+
+@keyframes five {
+    0% {left: -10%; top: 15%}
+    25% {left: 30%; top: 25%}
+    50% {left: -20%; top: 35%}
+    75% {left: 20%; top: 5%}
+    100% {left: -10%; top: 15%}
+}
+
+@keyframes six {
+    0% {left: 5%; top: -20%}
+    25% {left: -25%; top: -10%}
+    50% {left: 20%; top: -30%}
+    75% {left: -10%; top: -15%}
+    100% {left: 5%; top: -20%}
+}
+
+/* Keyframes for shapes moving around the bottom of the screen */
+@keyframes seven {
+    0% {left: -25%; top: 75%}
+    25% {left: 5%; top: 85%}
+    50% {left: -15%; top: 95%}
+    75% {left: 25%; top: 65%}
+    100% {left: -25%; top: 75%}
+}
+
+@keyframes eight {
+    0% {left: -15%; top: 65%}
+    25% {left: 25%; top: 75%}
+    50% {left: -10%; top: 85%}
+    75% {left: 10%; top: 55%}
+    100% {left: -15%; top: 65%}
+}
+
+@keyframes nine {
+    0% {left: 10%; top: 85%}
+    25% {left: -10%; top: 95%}
+    50% {left: 25%; top: 65%}
+    75% {left: -15%; top: 75%}
+    100% {left: 10%; top: 85%}
+}

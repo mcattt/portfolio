@@ -35,6 +35,7 @@ export default {
           '0%': { 'background-position': '0%' },
           '100%': { 'background-position': '100%' },
         },
+        
       },
       transitionProperty: {
         'width': 'width', // Add a custom transition for the 'width' property

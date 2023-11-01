@@ -72,7 +72,7 @@ export const Carousel = () => {
     }
     return (
         <div className=" flex flex-col justify-center overflow-hidden ">
-            <div className=" whitespace-nowrap transition  transform duration-300"
+            <div className=" whitespace-nowrap transition  transform duration-300 mt-3"
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
             >
                 {items.map((item) => {
@@ -82,14 +82,14 @@ export const Carousel = () => {
             </div>
             <div className="flex justify-evenly">
 
-                <div className="flex justify-around items-center ">
+                <div className="flex justify-around items-center">
                     {items.map((item, index) => {
                         return (
                             <button
                                 onClick={() => {
                                     updateIndex(index);
                                 }}
-                                className={`flex w-2 h-2 text-[4px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-end w-[26px] h-[10px] ' : 'bg-gray-400 w-[10px] h-[10px]'
+                                className={`flex w-2 h-2 text-[8px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-end w-[60px] h-[20px] ' : 'bg-gray-400 w-[20px] h-[20px]'
                                     }`}
                             >
 

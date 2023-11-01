@@ -19,22 +19,22 @@ const About = () => {
     ];
 
     return (
-        <div id="about" className={`min-h-screen transition-all duration-1000 ml-1 mb-[200px]  ${hasBeenActive ? 'opacity-100' : 'opacity-0'}`}>
-            <h2 className=" mb-5 text-2xl font-extradica">About Me</h2>
+        <div id="about" className={`min-h-screen transition-all duration-1000  mb-[200px]  ${hasBeenActive ? 'opacity-100' : 'opacity-0'}`}>
+            <h2 className=" mb-3 text-5xl font-extradica ml-1">About Me</h2>
             <div className=''>
-                <div className="">
-                    <p className="">
-                        Hello! I'm Cat, a recent grad from the Front-End Web Development Program at BCIT.
+                <div className="border bg-gray-800 rounded-md">
+                    <p className="mx-2">
+                        Hello! I'm Macy, a recent grad from the Front-End Web Development Program at BCIT.
                         As a kid, my dream job was to be a video-game designer (though now I'd rather just play them) so I knew I wanted to do something in tech as a career.
                         In my free time, I really like to game (which I like to think has helped my ability to work with a team).
                     </p>
                 </div>
                 <div>
-                    <p className='text-xl mt-10'>Skills</p>
+                    <p className='text-3xl mt-10'>Skills</p>
                     <div className="grid grid-cols-2  gap-y-[5px] gap-x-[3rem]  ">
                         {skills.map((skill) => (
                             <div key={skill.name} className="flex flex-row items-center gap-2 text-[10px]">
-                                <i className={` ${skill.icon} text-xs`} />
+                                <i className={` ${skill.icon} text-base`} />
                                 <p>{skill.name}</p>
                             </div>
                         ))}

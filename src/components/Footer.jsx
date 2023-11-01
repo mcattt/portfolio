@@ -17,7 +17,7 @@ const Footer = () => {
     return (
         <footer className="  w-full fixed desktop:static bottom-0">
             <nav className="desktop:hidden">
-                <ul className="flex justify-around py-3 bg-background text-[5px]">
+                <ul className="flex justify-around py-3 bg-background">
                     <li onClick={() => scrollToSection('home')}>home</li>
                     <li onClick={() => scrollToSection('projects')}>projects</li>
                     <li onClick={() => scrollToSection('about')}>about</li>
