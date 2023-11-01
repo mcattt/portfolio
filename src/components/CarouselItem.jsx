@@ -1,6 +1,6 @@
 import React from "react";
 import Accordion from "./Accordion";
-import ModalImage from "react-modal-image";
+
 
 
 const formatTools = (tools) => {
@@ -59,7 +59,7 @@ export const CarouselItem = ({ item }) => {
             <div className=" 
     bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start pt-[1px] px-[1px] w-48    transition-all duration-500        ">
                 <div className="text-xl bg-background   px-1 mt-[-1px] mx-[-1px] mb-[1px]">
-                    <Accordion title="Highlights" content={item.highlights} />
+                    <Accordion title="Details" content={item.highlights} />
                 </div>
             </div>
             <div className=" 

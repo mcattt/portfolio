@@ -9,12 +9,12 @@ const items = [
     {
         title: "Movie Database",
         tools: ["react", "tailwind", "vite"],
-        description: "A database created using React and the TMDB API",
+        description: "A database created using React and the TMDB API, done in a team of 3 with my classmates.",
         //maybe do carousel for this as well?
         img: imgDataBase01,
         liveSiteButton: "google.ca",
         gitHubButton: "google.ca",
-        highlights: "-thing 1 - thing 2",
+        highlights: "This was my first project in React, and going from making a JavaScript game I was",
         learned: "lorem ipsum",
 
     },

@@ -22,16 +22,16 @@ const HomePage = ({ }) => {
     // https://stackoverflow.com/questions/67150736/tailwind-background-gradient-transition
 
     return (
-        <div id="home" className='min-h-screen h-auto'>
+        <div id="home" className='min-h-screen h-auto flex justify-center items-center'>
             <div className='flex flex-col  '>
                 <h1
-                    className="mt-40 text-[6rem]  leading-tight ml-2
-                    cursor-default font-extradica animate-gradient
+                    className=" text-[6rem]   leading-tight ml-2
+                    cursor-default font-extradica animate-gradient flex items-start
                     
                     text-transparent bg-clip-text  transition-all duration-500 bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start bg-size-200 bg-pos-0 hover:bg-pos-100"
                 >
 
-                    Macy {isDesktop ? <br /> : <></>} Cordner
+                    Macy Cordner
                 </h1>
                 <h2
                     className="
