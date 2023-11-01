@@ -24,7 +24,7 @@ const About = () => {
             <div className=''>
                 <div className="border bg-gray-800 rounded-md">
                     <p className="mx-2">
-                        Hello! I'm Macy, a recent grad from the Front-End Web Development Program at BCIT.
+                        Hello! I'm Cat, a recent grad from the Front-End Web Development Program at BCIT.
                         As a kid, my dream job was to be a video-game designer (though now I'd rather just play them) so I knew I wanted to do something in tech as a career.
                         In my free time, I really like to game (which I like to think has helped my ability to work with a team).
                     </p>

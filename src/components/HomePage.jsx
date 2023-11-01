@@ -31,7 +31,7 @@ const HomePage = ({ }) => {
                     text-transparent bg-clip-text  transition-all duration-500 bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start bg-size-200 bg-pos-0 hover:bg-pos-100"
                 >
 
-                    Macy Cordner
+                    Cat Cordner
                 </h1>
                 <h2
                     className="
