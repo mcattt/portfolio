@@ -177,42 +177,42 @@
 
       @keyframes animate {
         0% {
-            transform: scale(2); /* Starting scale */
+            transform: scale(5); /* Starting scale */
             opacity: 100%;
             bottom: 0;
         }
         5% {
-            transform: scale(2.5); /* Scaled up proportionally from 2 to 3.5 */
+            transform: scale(5.5); /* Scaled up proportionally from 2 to 3.5 */
             opacity: 95%;
             bottom: 5vh;
         }
         10% {
-            transform: scale(3); /* Scaled up proportionally from 2 to 3.5 */
+            transform: scale(6); /* Scaled up proportionally from 2 to 3.5 */
             opacity: 90%;
             bottom: 10vh;
         }
         15% {
-            transform: scale(3.5); /* Scaled up proportionally from 2 to 3.5 */
+            transform: scale(6.5); /* Scaled up proportionally from 2 to 3.5 */
             opacity: 85%;
             bottom: 15vh;
         }
         25% {
-            transform: scale(4.75); /* Scaled up proportionally from 2 to 4.75 */
+            transform: scale(7.5); /* Scaled up proportionally from 2 to 4.75 */
             opacity: 75%;
             bottom: 25vh;
         }
         50% {
-            transform: scale(7.5); /* Scaled up proportionally from 2 to 7.5 */
+            transform: scale(10); /* Scaled up proportionally from 2 to 7.5 */
             opacity: 50%;
             bottom: 50vh;
         }
         75% {
-            transform: scale(11); /* Scaled up proportionally from 2 to 11 */
+            transform: scale(10); /* Scaled up proportionally from 2 to 11 */
             opacity: 25%;
             bottom: 75vh;
         }
         100% {
-            transform: scale(15); /* Scaled up proportionally from 2 to 15 */
+            transform: scale(10); /* Scaled up proportionally from 2 to 15 */
             opacity: 0;
             bottom: 100vh;
         }

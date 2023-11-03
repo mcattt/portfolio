@@ -4,7 +4,7 @@ const BackgroundBlur = () => {
     useEffect(() => {
         const liElements = document.querySelectorAll('.box ul li');
 
-        liElements.forEach((li, index) => {
+        liElements.forEach((li) => {
             // Generate random left position between 0 and 100vw
             const leftPosition = `${Math.random() * 100}vw`;
             li.style.left = leftPosition;
