@@ -9,7 +9,7 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import SideNav from "./components/SideNav";
 import Header from './components/Header';
-import Background from './components/Background';
+import BackgroundBlur from './components/BackgroundBlur';
 import { TabProvider } from './components/TabContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <TabProvider>
       <Header />
       <SideNav />
-      <Background />
+      <BackgroundBlur />
       <HomePage />
       <Projects />
       <About />

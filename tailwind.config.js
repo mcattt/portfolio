@@ -13,6 +13,13 @@ export default {
         "gradient-2-end": "#4EB2FF",
         "background": "#111111",
       },
+      backgroundImage: {
+          'radial-gradient-1': 'radial-gradient(#8797ff, transparent, transparent)',
+          'radial-gradient-2': 'radial-gradient(#FF9CEB, transparent, transparent)',
+          'radial-gradient-3': 'radial-gradient(#6630FF, transparent, transparent)',
+          'radial-gradient-4': 'radial-gradient(#4EB2FF, transparent, transparent)',
+        },
+
       backgroundSize: {
         'size-200': '200% 200%',
       },
@@ -20,6 +27,7 @@ export default {
         'pos-0': '0% 0%',
         'pos-100': '100% 100%',
       },
+
       fontFamily: {
         "extradica": ['extradica', 'sans-serif'],
         "sans": ['steppe', 'sans-serif'],
@@ -35,7 +43,7 @@ export default {
           '0%': { 'background-position': '0%' },
           '100%': { 'background-position': '100%' },
         },
-        
+
       },
       transitionProperty: {
         'width': 'width', // Add a custom transition for the 'width' property
