@@ -14,11 +14,11 @@ export default {
         "background": "#111111",
       },
       backgroundImage: {
-          'radial-gradient-1': 'radial-gradient(#8797ff, transparent, transparent)',
-          'radial-gradient-2': 'radial-gradient(#FF9CEB, transparent, transparent)',
-          'radial-gradient-3': 'radial-gradient(#6630FF, transparent, transparent)',
-          'radial-gradient-4': 'radial-gradient(#4EB2FF, transparent, transparent)',
-        },
+        'radial-gradient-1': 'radial-gradient(#8797ff, transparent, transparent)',
+        'radial-gradient-2': 'radial-gradient(#FF9CEB, transparent, transparent)',
+        'radial-gradient-3': 'radial-gradient(#6630FF, transparent, transparent)',
+        'radial-gradient-4': 'radial-gradient(#4EB2FF, transparent, transparent)',
+      },
 
       backgroundSize: {
         'size-200': '200% 200%',

@@ -9,13 +9,15 @@ const items = [
     {
         title: "Movie Database",
         tools: ["react", "tailwind", "vite"],
-        description: "A database created using React and the TMDB API, done in a team of 3 with my classmates.",
+        description: "MovieClip is a website created by myself and two classmates. It's a dynamic movie database built using React and the TMDB API, focusing on user-friendly features and responsive design.",
         //maybe do carousel for this as well?
         img: imgDataBase01,
         liveSiteButton: "google.ca",
         gitHubButton: "google.ca",
-        highlights: "This was my first project in React, and going from making a JavaScript game I was",
-        learned: "lorem ipsum",
+        highlights: `Search and Filter: Users can easily search and filter movies by various criteria, search wasn't required but we wanted to add the functionality to make it more interactive.
+        Detailed Movie Pages: Clicking on a movie reveals comprehensive details, including cast, crew, plot summary, release date, and user ratings.Trailers are integrated when available.`,
+        learned: `-Learning Tailwind (we wanted to take the extra initiative since it wasn't taught in the program) -Working with a team members with similar workflows and motivations made this a super fun project to do 
+        -Being able to utilize GitHub and really learn how to use it within a team setting`,
 
     },
     {

@@ -13,11 +13,12 @@ const Projects = () => {
     return (
         <div
             id="projects"
-            className={`min-h-screen h-auto pt-3 transition-all  duration-1000 ${hasBeenActive ? 'opacity-100' : 'opacity-0'}`}
+            className={`min-h-screen h-auto pt-3  `}
         >
-            <h2 className="ml-1 mb-10 text-5xl font-extradica">Projects</h2>
-
-            <Carousel />
+            <h2 className={`ml-1 mb-10 text-5xl transition-all  duration-1000 font-extradica ${hasBeenActive ? 'opacity-100 translate-y-0' : 'translate-y-4 opacity-0'}`}>Projects</h2>
+            <div className={`transition-all  duration-1000 ${hasBeenActive ? 'opacity-100 translate-y-0 delay-200' : 'translate-y-4 opacity-0'}`}>
+                <Carousel />
+            </div>
         </div>
     );
 };

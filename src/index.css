@@ -11,7 +11,7 @@
 }
 @font-face {
     font-family: "steppe";
-    src: url(/fonts/steppe/SteppeTrial-Regular-BF64acc0f336e82.woff);
+    src: url(/fonts/steppe/SteppeTrial-Light-BF64acc0ed7e053.ttf);
 }
 
 
@@ -168,47 +168,72 @@
 
 
    
-
+/* change to not rand */
 
       .box ul li{
 
-        animation: animate 20s linear infinite;
+        animation: animate 30s linear infinite;
       }
+      .box ul li:nth-child(2){
+left: 37vw;
+animation-delay: 2s;
+      }
+   .box ul li:nth-child(3){
+    left: 25vw;
+    animation-delay: 4s;
+      }  
+       .box ul li:nth-child(4){
+        left: 60vw; 
+        animation-delay: 3s;
+      } 
+        .box ul li:nth-child(5){
+            left: 75vw;
+            animation-delay: 8s;
+      }  
+       .box ul li:nth-child(6){
+        left: 90vw;
+        animation-delay: 7s;
+      }  
 
       @keyframes animate {
         0% {
             transform: scale(5); /* Starting scale */
-            opacity: 100%;
-            bottom: 0;
+            opacity: 50%;
+            bottom: -40px;
         }
         5% {
             transform: scale(5.5); /* Scaled up proportionally from 2 to 3.5 */
-            opacity: 95%;
+            opacity: 45%;
             bottom: 5vh;
         }
         10% {
             transform: scale(6); /* Scaled up proportionally from 2 to 3.5 */
-            opacity: 90%;
+            opacity: 40%;
             bottom: 10vh;
         }
         15% {
             transform: scale(6.5); /* Scaled up proportionally from 2 to 3.5 */
-            opacity: 85%;
+            opacity: 35%;
             bottom: 15vh;
         }
         25% {
             transform: scale(7.5); /* Scaled up proportionally from 2 to 4.75 */
-            opacity: 75%;
+            opacity: 25%;
             bottom: 25vh;
         }
         50% {
             transform: scale(10); /* Scaled up proportionally from 2 to 7.5 */
-            opacity: 50%;
+            opacity: 20%;
             bottom: 50vh;
         }
         75% {
             transform: scale(10); /* Scaled up proportionally from 2 to 11 */
-            opacity: 25%;
+            opacity: 15%;
+            bottom: 75vh;
+        }
+        85% {
+            transform: scale(10); /* Scaled up proportionally from 2 to 11 */
+            opacity: 15%;
             bottom: 75vh;
         }
         100% {

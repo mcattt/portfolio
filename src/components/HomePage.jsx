@@ -16,9 +16,6 @@ const HomePage = ({ }) => {
     };
     const isDesktop = useMediaQuery("(max-width: 900px)");
 
-
-
-
     // https://stackoverflow.com/questions/67150736/tailwind-background-gradient-transition
 
     return (

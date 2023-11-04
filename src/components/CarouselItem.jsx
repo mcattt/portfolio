@@ -55,17 +55,17 @@ export const CarouselItem = ({ item }) => {
             </div>
 
         </div>
-        <div className="   lg:w-2/5 pb-10">
-            <div className="  
+        <div className="  mx-auto lg:w-2/5 pb-10">
+            <div className="  w-60 
     bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start pt-[1px] px-[1px]     transition-all duration-500        ">
                 <div className="text-xl bg-background   px-1 mt-[-1px] mx-[-1px] mb-[1px]">
                     <Accordion title="Details" content={item.highlights} />
                 </div>
             </div>
-            <div className=" 
+            <div className=" w-60
     bg-gradient-to-r from-gradient-2-start via-gradient-1-end to-gradient-2-end p-[1px]  ">
                 <div className="text-xl bg-background px-1 mx-[-1px] pt-[1px]">
-                    <Accordion title="What I learned" content={item.learned} />
+                    <Accordion title="Highlights" content={item.learned} />
                 </div>
             </div>
 
