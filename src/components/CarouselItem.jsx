@@ -27,16 +27,16 @@ export const CarouselItem = ({ item }) => {
 
     const formattedTools = formatTools(item.tools);
 
-    return <div className="inline-flex flex-col justify-center w-[100%] z-[-9999] px-3">
+    return <div className="inline-flex flex-col justify-center w-[100%] z-[-9999] px-3 ">
 
         <div className=" desktop:grid desktop:grid-cols-2 ">
-            <div className="mb-5 whitespace-normal desktop:col-start-2 desktop:ml-6">
+            <div className="mb-5 whitespace-normal desktop:col-start-2 desktop:ml-6  mx-auto">
                 <div className=" font-light   text-3xl"><h2>{item.title}</h2></div>
                 <div className="italic text-[16px]">{formattedTools}</div>
             </div>
-            <div className="desktop:col-start-1 desktop:row-start-1 desktop:row-span-2">
+            <div className="desktop:col-start-1 desktop:row-start-1 desktop:row-span-2 max-w-[1000px] mx-auto">
 
-                <img src={item.img} alt="" className=" mx-auto" />
+                <img src={item.img} alt="" className=" " />
 
 
                 <div className="flex justify-evenly my-4 text-[16px] ">
@@ -50,7 +50,7 @@ export const CarouselItem = ({ item }) => {
 
 
             </div>
-            <div className=" whitespace-normal mb-4 desktop:row-span-2 desktop:col-start-2 desktop:ml-6 desktop:mb-0 desktop:mt-10">
+            <div className=" whitespace-normal mb-4 desktop:row-span-2 desktop:col-start-2 desktop:ml-6 desktop:mb-0 desktop:mt-10 mx-auto">
                 <div className="font-light text-center text-base desktop:text-left"><p className="">{item.description}</p></div>
             </div>
 
