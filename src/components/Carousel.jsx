@@ -14,10 +14,38 @@ const items = [
         img: imgDataBase01,
         liveSiteButton: "google.ca",
         gitHubButton: "google.ca",
-        highlights: `Search and Filter: Users can easily search and filter movies by various criteria, search wasn't required but we wanted to add the functionality to make it more interactive.
-        Detailed Movie Pages: Clicking on a movie reveals comprehensive details, including cast, crew, plot summary, release date, and user ratings.Trailers are integrated when available.`,
-        learned: `-Learning Tailwind (we wanted to take the extra initiative since it wasn't taught in the program) -Working with a team members with similar workflows and motivations made this a super fun project to do 
-        -Being able to utilize GitHub and really learn how to use it within a team setting`,
+        highlights: (
+            <div className="mt-1">
+                <p>
+                    <strong>Search and Filter:</strong>
+                    <p className="ml-2">Users can easily search and filter movies by various criteria. Search wasn't required, but we wanted to add the functionality to make it more interactive.
+                    </p>
+                </p>
+                <p>
+                    <strong>Detailed Movie Pages:</strong>
+                    <p className="ml-2">
+                        Clicking on a movie reveals comprehensive details, including cast, crew, plot summary, release date, and user ratings. Trailers are integrated when available.
+                    </p>
+                </p>
+                <p>
+                    <strong>Saving Favourite Movies:</strong>
+                    <p className="ml-2">
+                        Favouriting a movie will store the data in Local Storage, making all your favourites available next time you visit the webpage.
+                    </p>
+                </p>
+            </div>
+        ),
+        learned: (
+            <div className="ml-4">
+                <ul className="list-disc">
+                    <li>Learning Tailwind (we wanted to take the extra initiative since it wasn't taught in the program)</li>
+                    <li>Having a team with similar workflows and motivations made this a super fun project to do
+                    </li>
+                    <li>Being able to utilize GitHub and really learn how to use it within a team setting</li>
+                    <li>Creating the live site to be a 1:1 of the mockup felt super rewarding and reinforced my passion of Web Development! </li>
+                </ul>
+            </div>
+        ),
 
     },
     {
@@ -25,7 +53,7 @@ const items = [
         tools: ["javascript", " css", "html"],
         description: "Pokemon word guessing game",
         //maybe do carousel for this as well?
-        img: imgDataBase02,
+        img: imgGame01,
         liveSiteButton: "https://www.google.ca",
         gitHubButton: "google.ca",
         highlights: "-thing 1 - thing 2",

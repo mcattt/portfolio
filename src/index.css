@@ -12,6 +12,22 @@
 @font-face {
     font-family: "steppe";
     src: url(/fonts/steppe/SteppeTrial-Light-BF64acc0ed7e053.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "steppe";
+    src: url(/fonts/steppe/SteppeTrial-Medium-BF64acc0eda297d.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "steppe";
+    src: url(/fonts/steppe/SteppeTrial-Regular-BF64acc0eda3b9f.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "steppe";
+    src: url(/fonts/steppe/SteppeTrial-SemiBold-BF64acc0ed87581.ttf);
+    font-weight: 600;
 }
 
 

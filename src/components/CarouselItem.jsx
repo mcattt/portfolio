@@ -29,17 +29,17 @@ export const CarouselItem = ({ item }) => {
 
     return <div className="inline-flex flex-col justify-center w-[100%] z-[-9999] px-3">
 
-        <div className=" lg:grid lg:grid-cols-2">
-            <div className="mb-5 whitespace-normal">
-                <div className=" text-3xl"><h2>{item.title}</h2></div>
+        <div className=" desktop:grid desktop:grid-cols-2 ">
+            <div className="mb-5 whitespace-normal desktop:col-start-2 desktop:ml-6">
+                <div className=" font-light   text-3xl"><h2>{item.title}</h2></div>
                 <div className="italic text-[16px]">{formattedTools}</div>
             </div>
-            <div>
+            <div className="desktop:col-start-1 desktop:row-start-1 desktop:row-span-2">
 
                 <img src={item.img} alt="" className=" mx-auto" />
 
 
-                <div className="flex justify-evenly my-4 text-[16px]">
+                <div className="flex justify-evenly my-4 text-[16px] ">
 
                     <button className="border px-1" >
                         <a href={item.liveSiteButton}>Live Site</a>
@@ -50,19 +50,19 @@ export const CarouselItem = ({ item }) => {
 
 
             </div>
-            <div className=" whitespace-normal mb-4">
-                <div className=" text-center text-base"><p className="">{item.description}</p></div>
+            <div className=" whitespace-normal mb-4 desktop:row-span-2 desktop:col-start-2 desktop:ml-6 desktop:mb-0 desktop:mt-10">
+                <div className="font-light text-center text-base desktop:text-left"><p className="">{item.description}</p></div>
             </div>
 
         </div>
         <div className="  mx-auto lg:w-2/5 pb-10">
-            <div className="  w-60 
+            <div className="  max-w-[450px] 
     bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start pt-[1px] px-[1px]     transition-all duration-500        ">
                 <div className="text-xl bg-background   px-1 mt-[-1px] mx-[-1px] mb-[1px]">
                     <Accordion title="Details" content={item.highlights} />
                 </div>
             </div>
-            <div className=" w-60
+            <div className=" max-w-[450px] 
     bg-gradient-to-r from-gradient-2-start via-gradient-1-end to-gradient-2-end p-[1px]  ">
                 <div className="text-xl bg-background px-1 mx-[-1px] pt-[1px]">
                     <Accordion title="Highlights" content={item.learned} />

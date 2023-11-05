@@ -5,7 +5,7 @@ const SideNav = () => {
 
   return (
     <div>
-      <nav className=' hidden desktop:flex flex-col fixed right-0 top-[50%] text-right mr-2'>
+      <nav className=' hidden desktop:flex flex-col fixed right-0 top-[50%] text-right mr-2 z-[999999]'>
         <a
           className={`text-white ${activeTab === 'home' ? 'mr-[2px] font-bold' : ''}`}
           href="#home"
