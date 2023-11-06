@@ -41,7 +41,7 @@ export const CarouselItem = ({ item }) => {
 
                 <div className="flex justify-evenly my-4 text-[16px] ">
 
-                    <button className="border px-1" >
+                    <button className="btn-5 border px-1 " >
                         <a href={item.liveSiteButton}>Live Site</a>
                     </button>
                     <button className="border px-1" >{<a href={item.gitHubButton}>Github Repo</a>}</button>

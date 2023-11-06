@@ -8,6 +8,12 @@ const About = () => {
         <div id="contact" >
             <p className='text-sm text-center mt-20  max-w-[600px] mx-auto'>I'm eager to dive into the tech industry, collaborate on exciting projects, and continue learning. Whether you want to discuss opportunities or simply share your thoughts on tech and gaming, lets connect!</p>
 
+
+            <button className='btn-5'>button</button>
+
+
+
+
             <div className='flex flex-row  justify-evenly mt-12 bg-gray-700 mx-10 py-10 rounded-2xl bg-opacity-30'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" viewBox="0 0 24 24">
                     <defs>
