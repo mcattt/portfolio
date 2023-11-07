@@ -13,10 +13,10 @@ const Projects = () => {
     return (
         <div
             id="projects"
-            className={`min-h-screen h-auto pt-[40px]  `}
+            className={`min-h-screen h-auto mx-2`}
         >
-            <h2 className={`ml-1 mb-4 text-5xl transition-all  duration-1000 font-extradica ${hasBeenActive ? 'opacity-100 translate-y-0' : 'translate-y-4 opacity-0'}`}>Projects</h2>
-            <div className={`transition-all  duration-1000 ${hasBeenActive ? 'opacity-100 translate-y-0 delay-200' : 'translate-y-4 opacity-0'}`}>
+            <h2 className={` mb-4 text-5xl transition-all  duration-1000 font-extradica ${hasBeenActive ? 'opacity-100 translate-y-0' : 'translate-y-4 opacity-0'}`}>Projects</h2>
+            <div className={`transition-all mx-2 duration-1000 ${hasBeenActive ? 'opacity-100 translate-y-0 delay-200' : 'translate-y-4 opacity-0'}`}>
                 <Carousel />
             </div>
         </div>

@@ -6,8 +6,8 @@ const Accordion = ({ title, content }) => {
     return (
         <div className='whitespace-normal' >
             <div className='flex flex-row items-center justify-between' >
-                <div className={` font-medium ' ${isActive ? ' italic' : ''}`} >{title}</div>
-                <div onClick={() => setIsActive(!isActive)} className={`ml-2 w-4 transition-all duration-700 ease-in-out ${isActive ? ' rotate-180' : ''}`}> <img src={downArrow} alt="" /> </div>
+                <div className={` font-medium py-[2px] ${isActive ? ' italic' : ''}`} >{title}</div>
+                <div onClick={() => setIsActive(!isActive)} className={`ml-2 w-4 transition-all duration-700 ease-in-out   cursor-pointer ${isActive ? ' rotate-180' : ''}`}> <img src={downArrow} alt="" /> </div>
             </div>
             <div className='' >
                 <div className={`bg-background mx-[-1px] font-thin transition-all transition-max-h text-[14px] ease-in-out ${isActive ? 'max-h-screen opacity-100  duration-700 translate-y-0' : ' translate-y-2 max-h-0 overflow-hidden opacity-0 duration-300'}`}>

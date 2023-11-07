@@ -23,9 +23,10 @@ const HomePage = ({ }) => {
             <div className='flex flex-col  '>
                 <h1
                     className=" text-[6rem]  breakpoint-660:text-[7rem] breakpoint-1200:text-[9rem] leading-tight ml-2
-                    cursor-default font-extradica animate-gradient flex items-start
-                    
-                    text-transparent bg-clip-text  transition-all duration-500 bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start bg-size-200 bg-pos-0 hover:bg-pos-100"
+                    cursor-default font-extradica desktop:animate-gradient flex items-start
+                    animate-text
+
+                    text-transparent bg-clip-text  transition-all duration-500 bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start bg-size-200 desktop:bg-pos-0 desktop:hover:bg-pos-100"
                 >
 
                     Cat Cordner
@@ -33,16 +34,16 @@ const HomePage = ({ }) => {
                 <h2
                     className="
                     text-[2rem] breakpoint-660:text-[2.4rem] breakpoint-1200:text-[3.4rem] text-center italic
-                    cursor-default font-extradica 
-                    text-transparent bg-clip-text  transition-all duration-500 bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start bg-size-200 bg-pos-0 hover:bg-pos-100"
+                    cursor-default font-extradica animate-text desktop:animate-gradient
+                    text-transparent bg-clip-text  transition-all duration-500 bg-gradient-to-r from-gradient-2-start via-gradient-1-end to-gradient-2-end desktop:to-gradient-2-start bg-size-200 bg-pos-0 desktop:hover:bg-pos-100"
                 >
                     Front-End Web
                     Developer
                 </h2>
 
-                <div className='flex items-center flex-col mt-20 breakpoint-1200:mt-32 '>
+                <div className='flex items-center flex-col mt-16 breakpoint-1200:mt-32 '>
                     <p className='mb-16 text-2xl breakpoint-1200:text-3xl breakpoint-1200:font-light  ' >see my projects</p>
-                    <img id="arrow-ani" onClick={() => scrollToSection('projects')} src={downArrow} alt="black arrow pointing down" className=' w-10 animate-bounce ' />
+                    <img id="arrow-ani" onClick={() => scrollToSection('projects')} src={downArrow} alt="black arrow pointing down" className='cursor-pointer w-10 animate-bounce ' />
                 </div>
             </div>
         </div >

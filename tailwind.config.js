@@ -27,7 +27,9 @@ export default {
         'pos-0': '0% 0%',
         'pos-100': '100% 100%',
       },
-
+      boxShadow: {
+        'custom': 'inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, .2)',
+      },
       fontFamily: {
         "extradica": ['extradica', 'sans-serif'],
         "sans": ['steppe', 'sans-serif'],
@@ -41,12 +43,23 @@ export default {
       },
       animation: {
         'gradient': 'background 1s',
+
+        text: 'text 15s ease infinite',
+
       },
       keyframes: {
-        'gradientAnimation': {
-          '0%': { 'background-position': '0%' },
-          '100%': { 'background-position': '100%' },
+        text: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
+
         },
+
 
       },
       transitionProperty: {

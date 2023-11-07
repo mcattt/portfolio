@@ -31,252 +31,41 @@
 }
 
 
+.container-bubbles {
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
-
-
-/* For shapes moving around the top */
-.bg-shape-1 {
-    width: 200px;
-    height: 200px;
-    border-radius: 9999px;
+.bubbles{
     position: relative;
-    animation: one 45s infinite;
+    display: flex;
 }
 
-.bg-shape-2 {
-    width: 200px;
-    height: 200px;
-    border-radius: 9999px;
+.bubbles span {
+    margin: 0 4px;
     position: relative;
-    animation: two 45s infinite;
-}
+    width: 10px;
+    height: 10px;
+    filter: blur(8px);
 
-.bg-shape-3 {
-    width: 200px;
-    height: 200px;
-    border-radius: 9999px;
-    position: relative;
-    animation: three 45s infinite;
-}
-/* Class names for shapes moving in the middle */
-.bg-shape-4 {
-    width: 200px;
-    height: 200px;
-    border-radius: 9999px;
-    position: relative;
-    animation: four 45s infinite;
-}
+    animation: animate 45s linear infinite;
+    animation-duration: calc(300s / var(--i));
 
-.bg-shape-5 {
-    width: 200px;
-    height: 200px;
-    border-radius: 9999px;
-    position: relative;
-    animation: five 45s infinite;
-}
 
-.bg-shape-6 {
-    width: 200px;
-    height: 200px;
-    border-radius: 9999px;
-    position: relative;
-    animation: six 45s infinite;
-}
-/* For shapes moving around the bottom */
-.bg-shape-7 {
-    width: 200px;
-    height: 200px;
-    border-radius: 9999px;
-    position: relative;
-    animation: seven 45s infinite;
-}
-
-.bg-shape-8 {
-    width: 200px;
-    height: 200px;
-    border-radius: 9999px;
-    position: relative;
-    animation: eight 45s infinite;
-}
-
-.bg-shape-9 {
-    width: 200px;
-    height: 200px;
-    border-radius: 9999px;
-    position: relative;
-    animation: nine 45s infinite;
-}
-/* Keyframes for shapes moving around the top of the screen */
-/* Keyframes for shapes moving around the top of the screen */
-@keyframes one {
-    0% {left: -25%; top: -25%}
-    25% {left: 25%; top: 25%}
-    50% {left: -15%; top: 15%}
-    75% {left: 15%; top: 5%}
-    100% {left: -25%; top: -25%}
-}
-
-@keyframes two {
-    0% {left: -15%; top: -15%}
-    25% {left: 5%; top: 5%}
-    50% {left: -10%; top: -10%}
-    75% {left: 10%; top: -20%}
-    100% {left: -15%; top: -15%}
-}
-
-@keyframes three {
-    0% {left: 15%; top: -5%}
-    25% {left: -5%; top: 10%}
-    50% {left: 10%; top: -10%}
-    75% {left: -5%; top: -15%}
-    100% {left: 15%; top: -5%}
-}
-
-/* Keyframes for shapes moving around the middle of the screen */
-@keyframes four {
-    0% {left: -20%; top: 30%}
-    25% {left: 10%; top: 40%}
-    50% {left: -30%; top: 50%}
-    75% {left: 30%; top: 20%}
-    100% {left: -20%; top: 30%}
-}
-
-@keyframes five {
-    0% {left: -10%; top: 15%}
-    25% {left: 30%; top: 25%}
-    50% {left: -20%; top: 35%}
-    75% {left: 20%; top: 5%}
-    100% {left: -10%; top: 15%}
-}
-
-@keyframes six {
-    0% {left: 5%; top: -20%}
-    25% {left: -25%; top: -10%}
-    50% {left: 20%; top: -30%}
-    75% {left: -10%; top: -15%}
-    100% {left: 5%; top: -20%}
-}
-
-/* Keyframes for shapes moving around the bottom of the screen */
-@keyframes seven {
-    0% {left: -25%; top: 75%}
-    25% {left: 5%; top: 85%}
-    50% {left: -15%; top: 95%}
-    75% {left: 25%; top: 65%}
-    100% {left: -25%; top: 75%}
-}
-
-@keyframes eight {
-    0% {left: -15%; top: 65%}
-    25% {left: 25%; top: 75%}
-    50% {left: -10%; top: 85%}
-    75% {left: 10%; top: 55%}
-    100% {left: -15%; top: 65%}
-}
-
-@keyframes nine {
-    0% {left: 10%; top: 85%}
-    25% {left: -10%; top: 95%}
-    50% {left: 25%; top: 65%}
-    75% {left: -15%; top: 75%}
-    100% {left: 10%; top: 85%}
 }
 
 
-
-
-
-
-
-   
-/* change to not rand */
-
-      .box ul li{
-
-        animation: animate 30s linear infinite;
-      }
-      .box ul li:nth-child(2){
-left: 37vw;
-animation-delay: 2s;
-      }
-   .box ul li:nth-child(3){
-    left: 25vw;
-    animation-delay: 4s;
-      }  
-       .box ul li:nth-child(4){
-        left: 60vw; 
-        animation-delay: 3s;
-      } 
-        .box ul li:nth-child(5){
-            left: 75vw;
-            animation-delay: 8s;
-      }  
-       .box ul li:nth-child(6){
-        left: 90vw;
-        animation-delay: 7s;
-      }  
-
-      @keyframes animate {
-        0% {
-            transform: scale(5); /* Starting scale */
-            opacity: 50%;
-            bottom: -40px;
-        }
-        5% {
-            transform: scale(5.5); /* Scaled up proportionally from 2 to 3.5 */
-            opacity: 45%;
-            bottom: 5vh;
-        }
-        10% {
-            transform: scale(6); /* Scaled up proportionally from 2 to 3.5 */
-            opacity: 40%;
-            bottom: 10vh;
-        }
-        15% {
-            transform: scale(6.5); /* Scaled up proportionally from 2 to 3.5 */
-            opacity: 35%;
-            bottom: 15vh;
-        }
-        25% {
-            transform: scale(7.5); /* Scaled up proportionally from 2 to 4.75 */
-            opacity: 25%;
-            bottom: 25vh;
-        }
-        50% {
-            transform: scale(10); /* Scaled up proportionally from 2 to 7.5 */
-            opacity: 20%;
-            bottom: 50vh;
-        }
-        75% {
-            transform: scale(10); /* Scaled up proportionally from 2 to 11 */
-            opacity: 15%;
-            bottom: 75vh;
-        }
-        85% {
-            transform: scale(10); /* Scaled up proportionally from 2 to 11 */
-            opacity: 15%;
-            bottom: 75vh;
-        }
-        100% {
-            transform: scale(10); /* Scaled up proportionally from 2 to 15 */
-            opacity: 0;
-            bottom: 100vh;
-        }
+@keyframes animate {
+    0%
+    {
+        transform: translateY(100vh) scale(1);
     }
-    .btn-5 {
-        border: 0 solid;
-        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-        outline: 1px solid;
-        outline-color: rgba(255, 255, 255, 0.5);
-        outline-offset: 0px;
-        text-shadow: none;
-        transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-      } 
-      
-      .btn-5:hover {
-        border: 1px solid;
-        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, .2);
-        outline-color: rgba(255, 255, 255, 0);
-        outline-offset: 5px;
-        /* text-shadow: 1px 1px 2px #427388;  */
-      }
+    100%{
+        transform: translateY(-10vh) scale(2);
+    }
+}
+
