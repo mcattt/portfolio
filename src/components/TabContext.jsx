@@ -28,7 +28,8 @@ export const TabProvider = ({ children }) => {
             const projectsSection = document.getElementById('projects');
             const contactSection = document.getElementById('contact');
             const scrollTop = window.scrollY;
-            const offset = 800; // Adjust this value as needed
+            //change this based on window size
+            const offset = 600; // Adjust this value as needed
 
             if (
                 scrollTop >= homeSection.offsetTop - offset &&
