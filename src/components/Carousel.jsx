@@ -11,7 +11,7 @@ const items = [
         tools: ["react", "tailwind", "vite"],
         description: "MovieClip is a website created by myself and two classmates. It's a dynamic movie database built using React and the TMDB API, focusing on user-friendly features and responsive design.",
         //maybe do carousel for this as well?
-        img: imgDataBase01,
+        img: [imgDataBase01, imgDataBase02],
         liveSiteButton: "google.ca",
         gitHubButton: "google.ca",
         highlights: (
@@ -53,7 +53,7 @@ const items = [
         tools: ["javascript", " css", "html"],
         description: "Pokemon word guessing game",
         //maybe do carousel for this as well?
-        img: imgGame01,
+        img: [imgGame01],
         liveSiteButton: "https://www.google.ca",
         gitHubButton: "google.ca",
         highlights: "-thing 1 - thing 2",
@@ -65,7 +65,7 @@ const items = [
         tools: [],
         description: "",
         //maybe do carousel for this as well?
-        img: imgGame01,
+        img: [imgGame01],
         liveSiteButton: "google.ca",
         gitHubButton: "google.ca",
         highlights: "-thing 1 - thing 2",

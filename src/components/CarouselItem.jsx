@@ -1,7 +1,6 @@
 import React from "react";
 import Accordion from "./Accordion";
-
-
+import ImageCarousel from "./ImageCarousel";
 
 const formatTools = (tools) => {
     const formattedTools = [];
@@ -23,6 +22,21 @@ const formatTools = (tools) => {
     return formattedTools;
 };
 
+
+const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000, // Set the time interval between slides (in milliseconds)
+    beforeChange: (current, next) => {
+        setActiveIndex(next);
+    },
+};
+
+
 export const CarouselItem = ({ item }) => {
 
     const formattedTools = formatTools(item.tools);
@@ -36,9 +50,10 @@ export const CarouselItem = ({ item }) => {
             </div>
             <div className="desktop:col-start-1 desktop:row-start-1 desktop:row-span-2 max-w-[1000px] mx-auto ">
 
-                <img src={item.img} alt="" className="shadow-[0_0_5px_5px_rgba(255,255,255,0.05)] " />
+                <ImageCarousel item={item} />
 
 
+                
                 <div className="flex justify-evenly my-6 text-[16px] desktop:mb-0 desktop:mt-12 desktop:text-lg ">
 
                     <button className=" border px-4 desktop:py-1 outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:outline-offset-[5px] hover:outline-white/0" >
