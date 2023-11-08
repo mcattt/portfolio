@@ -21,7 +21,7 @@ const HomePage = ({ }) => {
         <div id="home" className='min-h-screen h-auto flex justify-center items-center mx-4'>
             <div className='flex flex-col  '>
                 <h1
-                    className=" text-[6rem]  breakpoint-660:text-[7rem] breakpoint-1200:text-[9rem] leading-tight ml-2
+                    className=" text-[6rem]  breakpoint-660:text-[7rem] breakpoint-1200:text-[9rem] leading-tight 
                     cursor-default font-extradica desktop:animate-gradient flex items-start
                     animate-text
 
@@ -40,7 +40,7 @@ const HomePage = ({ }) => {
                     Developer
                 </h2>
 
-                <div className='flex items-center flex-col mt-16 breakpoint-1200:mt-32 '>
+                <div className='flex items-center flex-col mt-14 '>
                     <p className='mb-16 text-2xl breakpoint-1200:text-3xl breakpoint-1200:font-light  ' >see my projects</p>
                     <img id="arrow-ani" onClick={() => scrollToSection('projects')} src={downArrow} alt="black arrow pointing down" className='cursor-pointer w-10 animate-bounce ' />
                 </div>

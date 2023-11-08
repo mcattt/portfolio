@@ -8,7 +8,7 @@ const ImageCarousel = ({ item }) => {
             setCurrentImageIndex((prevIndex) =>
                 prevIndex === item.img.length - 1 ? 0 : prevIndex + 1
             );
-        }, 3000); // Change the interval duration (in milliseconds) as needed
+        }, 4000); 
 
         return () => {
             clearInterval(interval);
