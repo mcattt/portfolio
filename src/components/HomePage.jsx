@@ -32,9 +32,9 @@ const HomePage = ({ }) => {
                 </h1>
                 <h2
                     className="
-                    text-[1.8rem] breakpoint-660:text-[2.4rem] breakpoint-1200:text-[3.4rem] text-center 
+                    text-[1.8rem] breakpoint-660:text-[2.4rem] breakpoint-1200:text-[3rem] text-center italic
                     cursor-default font-extradica animate-text desktop:animate-gradient
-                    text-transparent bg-clip-text  transition-all duration-500 bg-gradient-to-r from-gradient-2-start via-gradient-1-end to-gradient-2-end desktop:to-gradient-2-start bg-size-200 bg-pos-0 desktop:hover:bg-pos-100"
+                    text-transparent bg-clip-text  transition-all duration-500 text-white bg-size-200 bg-pos-0 desktop:hover:bg-pos-100"
                 >
                     Front-End Web
                     Developer
