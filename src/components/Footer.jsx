@@ -17,11 +17,11 @@ const Footer = () => {
     return (
         <footer className="  w-full fixed desktop:static bottom-0">
             <nav className="desktop:hidden">
-                <ul className="flex justify-around py-3 bg-background">
-                    <li onClick={() => scrollToSection('home')}>home</li>
-                    <li onClick={() => scrollToSection('projects')}>projects</li>
-                    <li onClick={() => scrollToSection('about')}>about</li>
-                    <li onClick={() => scrollToSection('contact')}>contact</li>
+                <ul className="flex justify-evenly py-3 text-lg bg-background">
+                    <li onClick={() => scrollToSection('home')} className=' cursor-pointer'>home </li>
+                    <li onClick={() => scrollToSection('projects')} className=' cursor-pointer'>projects</li>
+                    <li onClick={() => scrollToSection('about')} className=' cursor-pointer'>about</li>
+                    <li onClick={() => scrollToSection('contact')} className=' cursor-pointer'>contact</li>
                 </ul>
             </nav >
         </footer >
