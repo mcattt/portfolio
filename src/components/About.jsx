@@ -16,20 +16,19 @@ const About = () => {
         { name: "Java", icon: "devicon-java-plain colored" },
         { name: "WooCommerce", icon: "devicon-woocommerce-plain colored" },
         { name: "C++", icon: "devicon-cplusplus-plain colored" },
-        { name: "Shopify", icon: shopify },
         { name: "WordPress", icon: "devicon-wordpress-plain colored" },
 
 
     ];
 
     return (
-        <div div id="about" className=' pt-[40px] mx-2 desktop:max-w-[1200px] desktop:mx-auto'>
+        <div div id="about" className=' pt-[40px] px-2 desktop:max-w-[1200px] desktop:mx-auto'>
             <div id='about-description'>
                 <h2 className={`mb-3 text-5xl transition-all duration-1000 font-extradica  desktop:text-6xl  ${hasBeenActive ? 'translate-y-0 opacity-100' : 'translate-x-4 opacity-0'}`}>About Me</h2>
-                <div className={` mx-2 `}>
+                <div className={` px-2 `}>
 
                     <div className={`mt-10 duration-1000 transition-all ${hasBeenActive ? 'translate-y-0 opacity-100 delay-200' : 'translate-x-[-1rem] opacity-0'}`}>
-                        <section className="mx-auto text-base font-light   ">
+                        <section className="mx-auto text-base desktop:text-lg font-light   ">
                             <p className='mb-2'>
                                 Hello! I'm Cat, a recent grad from the Front-End Web Development Program at BCIT.
                             </p>
@@ -53,6 +52,10 @@ const About = () => {
                                 <p>{skill.name}</p>
                             </div>
                         ))}
+                        <div className='flex items-center justify-center flex-col '>
+                            <img src={shopify} alt="" className='w-9 breakpoint-560:w-12' />
+                            <p className=" cursor-default    gap-1 breakpoint-560:text-lg text-base font-[500] hover:translate-y-[-2px]">Shopify</p>
+                        </div>
                     </div>
                 </div>
 
