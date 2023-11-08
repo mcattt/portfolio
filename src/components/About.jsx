@@ -25,7 +25,7 @@ const About = () => {
     return (
         <div div id="about" className=' pt-[40px] mx-2 desktop:max-w-[1200px] desktop:mx-auto'>
             <div id='about-description'>
-                <h2 className={`mb-3 text-5xl transition-all duration-1000 font-extradica desktop:text-center  ${hasBeenActive ? 'translate-y-0 opacity-100' : 'translate-x-4 opacity-0'}`}>About Me</h2>
+                <h2 className={`mb-3 text-5xl transition-all duration-1000 font-extradica  desktop:text-6xl  ${hasBeenActive ? 'translate-y-0 opacity-100' : 'translate-x-4 opacity-0'}`}>About Me</h2>
                 <div className={` mx-2 `}>
 
                     <div className={`mt-10 duration-1000 transition-all ${hasBeenActive ? 'translate-y-0 opacity-100 delay-200' : 'translate-x-[-1rem] opacity-0'}`}>

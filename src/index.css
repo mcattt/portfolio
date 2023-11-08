@@ -31,30 +31,11 @@
 }
 
 
-.container-bubbles {
-    position: fixed;
-    height: 100%;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
 
-.bubbles{
-    position: relative;
-    display: flex;
-}
 
 .bubbles span {
-    margin: 0 4px;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    filter: blur(12px);
-
     animation: animate 45s linear infinite;
     animation-duration: calc(300s / var(--i));
-
 
 }
 

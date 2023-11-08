@@ -65,6 +65,7 @@ export default {
       transitionProperty: {
         'width': 'width', // Add a custom transition for the 'width' property
         // You can add more custom transition properties as needed
+        'fill': 'fill',
       },
       transitionDuration: {
         '200': '200ms', // Define the duration for 'width' transition

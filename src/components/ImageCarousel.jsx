@@ -16,7 +16,7 @@ const ImageCarousel = ({ item }) => {
     }, [item.img]);
 
     return (
-        <div className="relative">
+        <div className="">
             {item.img.map((image, index) => (
                 <img
                     key={index}
