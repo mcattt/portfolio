@@ -16,7 +16,7 @@ export const TabProvider = ({ children }) => {
             ...prevHistory,
             [newTab]: true,
         }));
-        console.log('active tabs:', activeTabHistory);
+
     };
 
 
@@ -29,31 +29,27 @@ export const TabProvider = ({ children }) => {
             const contactSection = document.getElementById('contact');
             const scrollTop = window.scrollY;
             //change this based on window size
-            const offset = 600; // Adjust this value as needed
+            const offset = 600;
 
             if (
                 scrollTop >= homeSection.offsetTop - offset &&
                 scrollTop < projectsSection.offsetTop - offset
             ) {
-                console.log('Setting activeTab to "home"');
                 setActiveTab('home');
                 updateActiveTab('home');
             } else if (
                 scrollTop >= projectsSection.offsetTop - offset &&
                 scrollTop < aboutSection.offsetTop - offset
             ) {
-                console.log('Setting activeTab to "projects"');
                 setActiveTab('projects');
                 updateActiveTab('projects');
             } else if (
                 scrollTop >= aboutSection.offsetTop - offset &&
                 scrollTop < contactSection.offsetTop - offset
             ) {
-                console.log('Setting activeTab to "about"');
                 setActiveTab('about');
                 updateActiveTab('about');
             } else if (scrollTop >= contactSection.offsetTop - offset) {
-                console.log('Setting activeTab to "contact"');
                 setActiveTab('contact');
                 updateActiveTab('contact');
             }

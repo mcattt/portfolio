@@ -7,8 +7,6 @@ const Projects = () => {
     // Check if the "projects" tab is in the activeTabHistory
     const hasBeenActive = activeTabHistory['projects'];
 
-    console.log('activeTab:', activeTab);
-    console.log('hasBeenActive:', hasBeenActive);
 
     return (
         <div
