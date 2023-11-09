@@ -5,7 +5,7 @@ const About = () => {
     return (
 
 
-        <div id="contact" className='mx-4 pb-32 pt-48
+        <div id="contact" className='mx-4 pb-12 pt-36 
         ' >
             <p className='text-base text-center   max-w-[600px] mx-auto'>I'm eager to dive into the tech industry, collaborate on exciting projects, and continue learning. Whether you want to discuss opportunities or simply share your thoughts on tech and gaming, lets connect!</p>
 

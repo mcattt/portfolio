@@ -75,13 +75,13 @@ export const CarouselItem = ({ item }) => {
         <div className="  mx-auto  pb-10 ">
             <div className="  max-w-[450px] desktop:max-w-[800px] 
     bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start pt-[1px] px-[1px]     transition-all duration-500        ">
-                <div className="text-xl desktop:text-3xl bg-background  pt-2 pl-2 pr-4 mt-[-1px] mx-[-1px] mb-[1px]">
+                <div className="text-xl desktop:text-3xl bg-background   pl-2 pr-4 mt-[-1px] mx-[-1px] mb-[1px]">
                     <Accordion title="Details" content={item.highlights} />
                 </div>
             </div>
             <div className=" max-w-[450px] desktop:max-w-[800px] 
     bg-gradient-to-r from-gradient-2-start via-gradient-1-end to-gradient-2-end p-[1px]  ">
-                <div className="text-xl desktop:text-3xl bg-background pl-2 pr-4 pt-2 px-1 mx-[-1px]">
+                <div className="text-xl desktop:text-3xl bg-background pl-2 pr-4  px-1 mx-[-1px]">
                     <Accordion title="Highlights" content={item.learned} />
                 </div>
             </div>

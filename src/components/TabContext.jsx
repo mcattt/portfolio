@@ -19,7 +19,12 @@ export const TabProvider = ({ children }) => {
 
     };
 
+    const [contactOffset, setContactOffset] = useState(600);
 
+
+
+
+    console.log(document.documentElement.clientHeight)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -31,27 +36,41 @@ export const TabProvider = ({ children }) => {
             //change this based on window size
             const offset = 600;
 
+
+            console.log(contactOffset)
+            if (document.documentElement.clientHeight >= 1032) {
+                setContactOffset(1000);
+                console.log(activeTab)
+            } else {
+                setContactOffset(600);
+            }
+
+
             if (
                 scrollTop >= homeSection.offsetTop - offset &&
                 scrollTop < projectsSection.offsetTop - offset
             ) {
                 setActiveTab('home');
                 updateActiveTab('home');
+                console.log(activeTab)
             } else if (
                 scrollTop >= projectsSection.offsetTop - offset &&
                 scrollTop < aboutSection.offsetTop - offset
             ) {
                 setActiveTab('projects');
                 updateActiveTab('projects');
+                console.log(activeTab)
             } else if (
                 scrollTop >= aboutSection.offsetTop - offset &&
-                scrollTop < contactSection.offsetTop - offset
+                scrollTop < contactSection.offsetTop - contactOffset
             ) {
                 setActiveTab('about');
                 updateActiveTab('about');
-            } else if (scrollTop >= contactSection.offsetTop - offset) {
+                console.log(activeTab)
+            } else if (scrollTop >= contactSection.offsetTop - contactOffset) {
                 setActiveTab('contact');
                 updateActiveTab('contact');
+                console.log(activeTab)
             }
         };
 
@@ -60,7 +79,7 @@ export const TabProvider = ({ children }) => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [activeTab, contactOffset]);
 
     return (
         <TabContext.Provider value={{ activeTab, activeTabHistory, updateActiveTab }}>

@@ -4,7 +4,7 @@ import { CarouselItem } from "./CarouselItem";
 import imgDataBase01 from "../assets/images/database-1.png";
 import imgDataBase02 from "../assets/images/database-2.png";
 import imgGame01 from "../assets/images/game-1.png";
-
+import imgGame02 from "../assets/images/game-2.png";
 const items = [
     {
         title: "Movie Database",
@@ -53,7 +53,7 @@ const items = [
         tools: ["javascript", " css", "html"],
         description: "Pokemon word guessing game",
         //maybe do carousel for this as well?
-        img: [imgGame01],
+        img: [imgGame01, imgGame02],
         liveSiteButton: "https://www.google.ca",
         gitHubButton: "google.ca",
         highlights: "-thing 1 - thing 2",
@@ -102,7 +102,7 @@ export const Carousel = () => {
     }
     return (
         <div className=" flex flex-col justify-center overflow-hidden ">
-            <div className=" whitespace-nowrap transition  transform duration-300 mt-3"
+            <div className=" whitespace-nowrap transition  transform duration-500 mt-3"
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
             >
                 {items.map((item) => {
