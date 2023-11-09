@@ -53,7 +53,7 @@ export const CarouselItem = ({ item }) => {
                 <ImageCarousel item={item} />
 
 
-                
+
                 <div className="flex justify-evenly my-6 text-[16px] desktop:mb-0 desktop:mt-12 desktop:text-lg ">
 
                     <button className=" border px-4 desktop:py-1 outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:outline-offset-[5px] hover:outline-white/0" >
@@ -61,7 +61,7 @@ export const CarouselItem = ({ item }) => {
                     </button>
                     <button className=" border px-4 desktop:py-1 outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:outline-offset-[5px] hover:outline-white/0" >
 
-                        {<a href={item.gitHubButton}>Github Repo</a>}</button>
+                        {<a href={item.gitHubButton}>Github</a>}</button>
 
                 </div>
 
@@ -75,13 +75,13 @@ export const CarouselItem = ({ item }) => {
         <div className="  mx-auto  pb-10 ">
             <div className="  max-w-[450px] desktop:max-w-[800px] 
     bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start pt-[1px] px-[1px]     transition-all duration-500        ">
-                <div className="text-xl desktop:text-3xl bg-background   px-1 mt-[-1px] mx-[-1px] mb-[1px]">
+                <div className="text-xl desktop:text-3xl bg-background  pt-2 pl-2 pr-4 mt-[-1px] mx-[-1px] mb-[1px]">
                     <Accordion title="Details" content={item.highlights} />
                 </div>
             </div>
             <div className=" max-w-[450px] desktop:max-w-[800px] 
     bg-gradient-to-r from-gradient-2-start via-gradient-1-end to-gradient-2-end p-[1px]  ">
-                <div className="text-xl desktop:text-3xl bg-background px-1 mx-[-1px] pt-[1px]">
+                <div className="text-xl desktop:text-3xl bg-background pl-2 pr-4 pt-2 px-1 mx-[-1px]">
                     <Accordion title="Highlights" content={item.learned} />
                 </div>
             </div>

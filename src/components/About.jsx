@@ -22,10 +22,10 @@ const About = () => {
     ];
 
     return (
-        <div div id="about" className=' pt-[40px] mx-6 desktop:max-w-[1200px] desktop:mx-auto'>
+        <div div id="about" className=' pt-[40px] px-6 desktop:max-w-[1200px] desktop:mx-auto'>
             <div id='about-description'>
                 <h2 className={`mb-3 text-5xl transition-all duration-1000 font-extradica  desktop:text-6xl  ${hasBeenActive ? 'translate-y-0 opacity-100' : 'translate-x-4 opacity-0'}`}>About Me</h2>
-                <div className={` mx-1 `}>
+                <div className={` px-1 `}>
 
                     <div className={`mt-10 duration-1000 transition-all ${hasBeenActive ? 'translate-y-0 opacity-100 delay-200' : 'translate-x-[-1rem] opacity-0'}`}>
                         <section className="mx-auto px-3 text-base desktop:text-lg font-light   ">
@@ -47,14 +47,14 @@ const About = () => {
                     <p className='text-3xl mt-10 mb-10 mx-auto text-center'>Skills and Experience</p>
                     <div className="grid grid-cols-3 breakpoint-450:grid-cols-4 mx-auto breakpoint-560:flex breakpoint-560:gap-5 px-2 breakpoint-560:justify-center max-w-[650px] flex-wrap  gap-y-1 gap-x-1  content-center items-center  ">
                         {skills.map((skill) => (
-                            <div key={skill.name} className=" cursor-default flex flex-col justify-center items-center  gap-1 breakpoint-560:text-lg text-base font-[500] hover:translate-y-[-2px]">
+                            <div key={skill.name} className=" cursor-default flex flex-col justify-center items-center  gap-1 breakpoint-560:text-lg text-base font-[500] desktop:hover:translate-y-[-2px] duration-150">
                                 <i className={` ${skill.icon} text-4xl breakpoint-560:text-5xl`} />
                                 <p>{skill.name}</p>
                             </div>
                         ))}
-                        <div className='flex items-center justify-center flex-col '>
+                        <div className='flex items-center justify-center flex-col desktop:hover:translate-y-[-2px] duration-150'>
                             <img src={shopify} alt="" className='w-9 breakpoint-560:w-12' />
-                            <p className=" cursor-default    gap-1 breakpoint-560:text-lg text-base font-[500] hover:translate-y-[-2px]">Shopify</p>
+                            <p className=" cursor-default    gap-1 breakpoint-560:text-lg text-base font-[500] ">Shopify</p>
                         </div>
                     </div>
                 </div>

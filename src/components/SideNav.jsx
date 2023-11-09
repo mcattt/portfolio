@@ -15,7 +15,8 @@ const SideNav = () => {
   };
 
   return (
-    <div className='text-sm cursor-pointer'>
+    <div className='text-sm cursor-pointer 
+    '>
       <nav className='hidden  font-[300] desktop:flex flex-col fixed right-0 top-[50%] text-right mr-2 z-[999999] '>
         <p
           className={`text-white ${activeTab === 'home' ? 'mr-[2px] font-bold' : ''}`}

@@ -11,10 +11,10 @@ const Projects = () => {
     return (
         <div
             id="projects"
-            className={`min-h-screen h-auto mx-6 max-w-[1200px] desktop:mx-auto  desktop:pt-[40px] `}
+            className={`min-h-screen h-auto px-6 max-w-[1200px] desktop:mx-auto  desktop:pt-[40px] `}
         >
             <h2 className={`text-5xl desktop:text-6xl transition-all  duration-1000 font-extradica ${hasBeenActive ? 'opacity-100 translate-y-0' : 'translate-y-4 opacity-0'}`}>Projects</h2>
-            <div className={`transition-all mt-12 mx-1 duration-1000 ${hasBeenActive ? 'opacity-100 translate-y-0 delay-200' : 'translate-y-4 opacity-0'}`}>
+            <div className={`transition-all mt-12 px-1 duration-1000 ${hasBeenActive ? 'opacity-100 translate-y-0 delay-200' : 'translate-y-4 opacity-0'}`}>
                 <Carousel />
             </div>
         </div>

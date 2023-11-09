@@ -10,15 +10,15 @@ const Header = () => {
             <header className=" w-full fixed  top-0  z-[9999] ">
                 <nav>
                     <ul className=" py-1 px-1 float-right bg-opacity-50 rounded-bl-xl bg-background  w-32  desktop:bg-transparent  flex gap-2  ">
-                        <li>
+                        <li className="bg-black rounded-full">
                             <img src={email} alt="" />
 
                         </li>
-                        <li>
+                        <li className="bg-black rounded-full">
                             <img src={github} alt="" />
 
                         </li>
-                        <li>
+                        <li className="bg-black rounded-full">
                             <img src={linkedin} alt="" />
 
                         </li>

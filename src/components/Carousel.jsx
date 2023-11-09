@@ -16,33 +16,33 @@ const items = [
         gitHubButton: "google.ca",
         highlights: (
             <div className="mt-1">
-                <p>
+                <div>
                     <strong>Search and Filter:</strong>
-                    <p className="ml-2">Users can easily search and filter movies by various criteria. Search wasn't required, but we wanted to add the functionality to make it more interactive.
+                    <p className="ml-2 mb-2">Users can easily search and filter movies by various criteria. Search wasn't required, but we wanted to add the functionality to make it more interactive.
                     </p>
-                </p>
-                <p>
+                </div>
+                <div>
                     <strong>Detailed Movie Pages:</strong>
-                    <p className="ml-2">
+                    <p className="ml-2 mb-2">
                         Clicking on a movie reveals comprehensive details, including cast, crew, plot summary, release date, and user ratings. Trailers are integrated when available.
                     </p>
-                </p>
-                <p>
+                </div>
+                <div>
                     <strong>Saving Favourite Movies:</strong>
-                    <p className="ml-2">
+                    <p className="ml-2 mb-2">
                         Favouriting a movie will store the data in Local Storage, making all your favourites available next time you visit the webpage.
                     </p>
-                </p>
+                </div>
             </div>
         ),
         learned: (
-            <div className="ml-4">
+            <div className="ml-4 ">
                 <ul className="list-disc">
-                    <li>Learning Tailwind (we wanted to take the extra initiative since it wasn't taught in the program)</li>
-                    <li>Having a team with similar workflows and motivations made this a super fun project to do
+                    <li className="mb-2">Learning Tailwind (we wanted to take the extra initiative since it wasn't taught in the program)</li>
+                    <li className="mb-2">Having a team with similar workflows and motivations made this a super fun project to do
                     </li>
-                    <li>Being able to utilize GitHub and really learn how to use it within a team setting</li>
-                    <li>Creating the live site to be a 1:1 of the mockup felt super rewarding and reinforced my passion of Web Development! </li>
+                    <li className="mb-2">Being able to utilize GitHub and really learn how to use it within a team setting</li>
+                    <li className="mb-2">Creating the live site to be a 1:1 of the mockup felt super rewarding and reinforced my passion of Web Development! </li>
                 </ul>
             </div>
         ),
@@ -119,7 +119,7 @@ export const Carousel = () => {
                                 onClick={() => {
                                     updateIndex(index);
                                 }}
-                                className={`flex w-2 h-2 text-[8px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-end w-[80px] h-[25px] ' : 'bg-gray-400 w-[25px] h-[25px]'
+                                className={`flex w-2 h-2 text-[8px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-start w-[80px] h-[25px] ' : 'bg-gray-400 w-[25px] h-[25px]'
                                     }`}
                             >
 

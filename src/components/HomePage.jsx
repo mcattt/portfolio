@@ -21,7 +21,7 @@ const HomePage = ({ }) => {
         <div id="home" className='min-h-screen h-auto flex justify-center items-center mx-4'>
             <div className='flex flex-col  '>
                 <h1
-                    className=" text-[6rem]  breakpoint-660:text-[7rem] breakpoint-1200:text-[9rem] leading-tight 
+                    className=" text-[6rem]  breakpoint-660:text-[7rem] breakpoint-1200:text-[10rem] leading-tight 
                     cursor-default font-extradica desktop:animate-gradient flex items-start
                     animate-text
 
