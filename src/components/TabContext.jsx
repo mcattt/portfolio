@@ -40,7 +40,6 @@ export const TabProvider = ({ children }) => {
             console.log(contactOffset)
             if (document.documentElement.clientHeight >= 1032) {
                 setContactOffset(1000);
-                console.log(activeTab)
             } else {
                 setContactOffset(600);
             }
@@ -52,25 +51,21 @@ export const TabProvider = ({ children }) => {
             ) {
                 setActiveTab('home');
                 updateActiveTab('home');
-                console.log(activeTab)
             } else if (
                 scrollTop >= projectsSection.offsetTop - offset &&
                 scrollTop < aboutSection.offsetTop - offset
             ) {
                 setActiveTab('projects');
                 updateActiveTab('projects');
-                console.log(activeTab)
             } else if (
                 scrollTop >= aboutSection.offsetTop - offset &&
                 scrollTop < contactSection.offsetTop - contactOffset
             ) {
                 setActiveTab('about');
                 updateActiveTab('about');
-                console.log(activeTab)
             } else if (scrollTop >= contactSection.offsetTop - contactOffset) {
                 setActiveTab('contact');
                 updateActiveTab('contact');
-                console.log(activeTab)
             }
         };
 
@@ -79,7 +74,7 @@ export const TabProvider = ({ children }) => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [activeTab, contactOffset]);
+    }, [contactOffset]);
 
     return (
         <TabContext.Provider value={{ activeTab, activeTabHistory, updateActiveTab }}>
