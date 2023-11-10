@@ -50,3 +50,21 @@
     }
 }
 
+
+.gradient-svg {
+background-image: linear-gradient(
+    to right,
+    hsl(211, 100%, 50%),
+    hsl(179, 100%, 30%)
+  );
+transition: background-image .5s ease-in-out;
+}
+
+
+.gradient-svg:hover {
+    background-image: linear-gradient(
+    to bottom,
+    hsl(344, 100%, 50%),
+    hsl(31, 100%, 40%)
+  );
+}

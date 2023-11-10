@@ -48,7 +48,7 @@ export const CarouselItem = ({ item }) => {
                 <div className=" font-light   text-3xl desktop:text-4xl"><h2>{item.title}</h2></div>
                 <div className="italic text-base desktop:text-lg">{formattedTools}</div>
             </div>
-            <div className="desktop:col-start-1 desktop:row-start-1 desktop:row-span-2 max-w-[1000px] mx-auto ">
+            <div className=" desktop:col-start-1 desktop:row-start-1 desktop:row-span-2 max-w-[1000px]  ">
 
                 <ImageCarousel item={item} />
 

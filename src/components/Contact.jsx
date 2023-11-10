@@ -11,7 +11,7 @@ const About = () => {
 
 
             <div className='flex flex-row  justify-evenly mt-12 bg-gray-700 mx-auto py-10 rounded-2xl bg-opacity-30   max-w-lg'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" className='transition-fill duration-700  hover:fill-[url(#grad1)]'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" className='gradient-svg'>
                     <defs>
                         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                             <stop offset="0%" style={{ stopColor: 'rgb(255, 255, 0)', stopOpacity: 1 }} />
