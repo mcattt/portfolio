@@ -17,22 +17,22 @@ const SideNav = () => {
   return (
     <div className='text-sm cursor-pointer 
     '>
-      <nav className='hidden  font-[300] desktop:flex flex-col fixed right-0 top-[50%] text-right mr-2 z-[999999] '>
+      <nav className='hidden  font-[300] desktop:flex flex-col fixed right-0 top-[50%] text-right mr-3 z-[999999] '>
         <p
-          className={`text-white ${activeTab === 'home' ? 'mr-[2px] font-bold' : ''}`}
+          className={`text-white ${activeTab === 'home' ? 'mr-[3px] font-bold' : ''}`}
 
           onClick={() => scrollToSection('home')}
         >
           00
         </p>
         <p
-          className={`text-white ${activeTab === 'projects' ? 'font-bold mr-[2px]' : ''}`}
+          className={`text-white ${activeTab === 'projects' ? 'font-bold mr-[3px]' : ''}`}
           onClick={() => scrollToSection('projects')}
         >
           01
         </p>
         <p
-          className={`text-white ${activeTab === 'about' ? 'mr-[2px] font-bold' : ''}`}
+          className={`text-white ${activeTab === 'about' ? 'mr-[3px] font-bold' : ''}`}
           onClick={() => scrollToSection('about')}
         >
           02

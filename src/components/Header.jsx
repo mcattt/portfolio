@@ -9,7 +9,7 @@ const Header = () => {
         <div>
             <header className=" w-full fixed  top-0  z-[9999] ">
                 <nav>
-                    <ul className=" py-1 px-1 float-right bg-opacity-50 rounded-bl-xl bg-background  w-32  desktop:bg-transparent  flex gap-2  ">
+                    <ul className=" py-1 px-1 float-right bg-opacity-50 rounded-bl-xl bg-background  w-32  desktop:bg-transparent  flex gap-2  mr-2">
                         <li className="bg-black rounded-full">
                             <img src={email} alt="" />
 

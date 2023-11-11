@@ -22,7 +22,7 @@ const About = () => {
     ];
 
     return (
-        <div div id="about" className='  px-6 desktop:max-w-[1200px] desktop:mx-auto pb-40'>
+        <div div id="about" className='  px-4 desktop:px-6 desktop:max-w-[1200px] desktop:mx-auto pb-40'>
             <div id='about-description'>
                 <h2 className={`mb-3 text-5xl transition-all duration-1000 font-extradica  desktop:text-6xl  ${hasBeenActive ? 'translate-y-0 opacity-100' : 'translate-x-4 opacity-0'}`}>About Me</h2>
                 <div className={` px-1 `}>
@@ -52,7 +52,7 @@ const About = () => {
                                 <p>{skill.name}</p>
                             </div>
                         ))}
-                        <div className='flex items-center justify-center flex-col desktop:hover:translate-y-[-2px] duration-150 mt-1 breakpoint-450:mt-0'>
+                        <div className='flex items-center justify-center flex-col desktop:hover:translate-y-[-2px] duration-150 mt-[5px] breakpoint-560:mt-0 '>
                             <img src={shopify} alt="" className='w-9 breakpoint-560:w-12' />
                             <p className=" cursor-default     breakpoint-560:text-lg text-base font-[500] ">Shopify</p>
                         </div>

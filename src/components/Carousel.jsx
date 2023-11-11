@@ -119,7 +119,7 @@ export const Carousel = () => {
                                 onClick={() => {
                                     updateIndex(index);
                                 }}
-                                className={`flex w-2 h-2 text-[8px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-start w-[80px] h-[25px] ' : 'bg-gray-400 w-[25px] h-[25px]'
+                                className={`mb-36 breakpoint-560:mb-0 flex w-2 h-2 text-[8px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-start w-[80px] h-[25px] ' : 'bg-gray-400 w-[25px] h-[25px]'
                                     }`}
                             >
 

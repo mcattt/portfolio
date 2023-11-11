@@ -11,7 +11,7 @@ const Projects = () => {
     return (
         <div
             id="projects"
-            className={`min-h-screen h-auto px-6 max-w-[1200px] desktop:mx-auto   `}
+            className={`min-h-screen h-auto px-4 desktop:px-6 max-w-[1200px] desktop:mx-auto   `}
         >
             <h2 className={`text-5xl desktop:text-6xl transition-all  duration-1000 font-extradica ${hasBeenActive ? 'opacity-100 translate-y-0' : 'translate-y-4 opacity-0'}`}>Projects</h2>
             <div className={`py-auto transition-all mt-12 px-1 duration-1000 ${hasBeenActive ? 'opacity-100 translate-y-0 delay-200' : 'translate-y-4 opacity-0'}`}>
