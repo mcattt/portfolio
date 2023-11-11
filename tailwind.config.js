@@ -39,7 +39,9 @@ export default {
         'breakpoint-450': "450px",
         'breakpoint-560': "560px",
         'breakpoint-660': '660px',
+        'breakpoint-1080': '1080px',
         'breakpoint-1200': '1200px',
+
       },
       animation: {
         'gradient': 'background 1s',

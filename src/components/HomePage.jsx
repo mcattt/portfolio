@@ -11,7 +11,7 @@ const HomePage = ({ }) => {
             duration: 1500,
             delay: 100,
             smooth: true,
-            offset: 0, // Adjust the offset as needed to ensure the section is properly in view
+            offset: -60, // Adjust the offset as needed to ensure the section is properly in view
         });
     };
 
@@ -40,8 +40,8 @@ const HomePage = ({ }) => {
                     Developer
                 </h2>
 
-                <div className='flex items-center flex-col mt-14 '>
-                    <p className='mb-16 text-2xl breakpoint-1200:text-3xl breakpoint-1200:font-light  ' >see my projects</p>
+                <div className='flex items-center flex-col mt-20 '>
+                    {/* <p className='mb-16 text-2xl breakpoint-1200:text-3xl breakpoint-1200:font-light  ' >see my projects</p> */}
                     <img id="arrow-ani" onClick={() => scrollToSection('projects')} src={downArrow} alt="black arrow pointing down" className='cursor-pointer w-10 animate-bounce ' />
                 </div>
             </div>

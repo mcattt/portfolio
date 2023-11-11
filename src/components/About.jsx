@@ -22,13 +22,13 @@ const About = () => {
     ];
 
     return (
-        <div div id="about" className=' pt-[40px] px-6 desktop:max-w-[1200px] desktop:mx-auto '>
+        <div div id="about" className='  px-6 desktop:max-w-[1200px] desktop:mx-auto pb-40'>
             <div id='about-description'>
                 <h2 className={`mb-3 text-5xl transition-all duration-1000 font-extradica  desktop:text-6xl  ${hasBeenActive ? 'translate-y-0 opacity-100' : 'translate-x-4 opacity-0'}`}>About Me</h2>
                 <div className={` px-1 `}>
 
                     <div className={`mt-10 duration-1000 transition-all ${hasBeenActive ? 'translate-y-0 opacity-100 delay-200' : 'translate-x-[-1rem] opacity-0'}`}>
-                        <section className="mx-auto px-3 text-sm desktop:text-lg font-light   ">
+                        <section className="mx-auto px-3 text-sm desktop:text-lg breakpoint-1080:text-xl font-light   ">
                             <p className='mb-2'>
                                 Hello! I'm Cat, a recent grad from the Front-End Web Development Program at BCIT.
                             </p>
@@ -44,7 +44,7 @@ const About = () => {
                     </div>
                 </div>
                 <div id="about-skills" className={`transition-all duration-1000 ${hasBeenActive ? 'translate-y-0 opacity-100 delay-500' : 'translate-x-4 opacity-0'}`}>
-                    <p className='text-3xl mt-10 mb-10 mx-auto text-center'>My Skillset</p>
+                    <p className='text-3xl mt-10 mb-10 mx-auto text-center breakpoint-1080:mt-36'>My Skillset</p>
                     <div className="grid grid-cols-3 breakpoint-450:grid-cols-4 mx-auto breakpoint-560:flex breakpoint-560:gap-5 px-2 breakpoint-560:justify-center max-w-[650px] flex-wrap  gap-y-1 gap-x-1  content-center items-center  ">
                         {skills.map((skill) => (
                             <div key={skill.name} className=" cursor-default flex flex-col justify-center items-center  gap-1 breakpoint-560:text-lg text-base font-[500] desktop:hover:translate-y-[-2px] duration-150">

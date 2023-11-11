@@ -10,7 +10,7 @@ const SideNav = () => {
       duration: 1200,
       delay: 50,
       smooth: true,
-      offset: 0, // Adjust the offset as needed to ensure the section is properly in view
+      offset: -60, // Adjust the offset as needed to ensure the section is properly in view
     });
   };
 
