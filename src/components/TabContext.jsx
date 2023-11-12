@@ -37,7 +37,6 @@ export const TabProvider = ({ children }) => {
             const offset = 600;
 
 
-            console.log(contactOffset)
             if (document.documentElement.clientHeight >= 1032) {
                 setContactOffset(1000);
             } else {
@@ -66,6 +65,7 @@ export const TabProvider = ({ children }) => {
             } else if (scrollTop >= contactSection.offsetTop - contactOffset) {
                 setActiveTab('contact');
                 updateActiveTab('contact');
+                console.log(activeTab);
             }
         };
 

@@ -23,18 +23,6 @@ const formatTools = (tools) => {
 };
 
 
-const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Set the time interval between slides (in milliseconds)
-    beforeChange: (current, next) => {
-        setActiveIndex(next);
-    },
-};
 
 
 export const CarouselItem = ({ item }) => {
@@ -56,10 +44,10 @@ export const CarouselItem = ({ item }) => {
 
                 <div className="flex justify-evenly my-6 text-[16px] desktop:mb-0 desktop:mt-12 desktop:text-lg ">
 
-                    <button className=" border px-4 desktop:py-1 outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:outline-offset-[5px] hover:outline-white/0" >
+                    <button className=" border px-4 rounded-sm outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:rounded-none hover:outline-offset-[5px] hover:outline-white/0" >
                         <a href={item.liveSiteButton}>Live Site</a>
                     </button>
-                    <button className=" border px-4 desktop:py-1 outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:outline-offset-[5px] hover:outline-white/0" >
+                    <button className=" border px-4 rounded-sm outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:rounded-none hover:outline-offset-[5px] hover:outline-white/0" >
 
                         {<a href={item.gitHubButton}>Github</a>}</button>
 
@@ -68,7 +56,7 @@ export const CarouselItem = ({ item }) => {
 
             </div>
             <div className=" whitespace-normal mb-4 desktop:row-span-2 desktop:col-start-2 desktop:ml-6 desktop:mb-0 desktop:mt-10 mx-auto">
-                <div className="font-light text-base desktop:text-lg"><p className="">{item.description}</p></div>
+                <div className=""><p className="font-light text-base desktop:text-xl">{item.description}</p></div>
             </div>
 
         </div>
@@ -76,13 +64,13 @@ export const CarouselItem = ({ item }) => {
             <div className="  max-w-[450px] desktop:max-w-[800px] 
     bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start pt-[1px] px-[1px]     transition-all duration-500        ">
                 <div className="text-xl desktop:text-3xl bg-background   pl-2 pr-4 mt-[-1px] mx-[-1px] mb-[1px]">
-                    <Accordion title="Details" content={item.highlights} />
+                    <Accordion title="Details" content={item.details} />
                 </div>
             </div>
             <div className=" max-w-[450px] desktop:max-w-[800px] 
     bg-gradient-to-r from-gradient-2-start via-gradient-1-end to-gradient-2-end p-[1px]  ">
                 <div className="text-xl desktop:text-3xl bg-background pl-2 pr-4  px-1 mx-[-1px]">
-                    <Accordion title="Highlights" content={item.learned} />
+                    <Accordion title="Highlights" content={item.highlights} />
                 </div>
             </div>
 

@@ -10,11 +10,10 @@ const items = [
         title: "Movie Database",
         tools: ["react", "tailwind", "vite"],
         description: "MovieClip is a website created by myself and two classmates. It's a dynamic movie database built using React and the TMDB API, focusing on user-friendly features and responsive design.",
-        //maybe do carousel for this as well?
         img: [imgDataBase01, imgDataBase02],
         liveSiteButton: "google.ca",
         gitHubButton: "google.ca",
-        highlights: (
+        details: (
             <div className="mt-1">
                 <div>
                     <strong>Search and Filter:</strong>
@@ -35,7 +34,7 @@ const items = [
                 </div>
             </div>
         ),
-        learned: (
+        highlights: (
             <div className="ml-4 ">
                 <ul className="list-disc">
                     <li className="mb-2">Learning Tailwind (we wanted to take the extra initiative since it wasn't taught in the program)</li>
@@ -50,26 +49,54 @@ const items = [
     },
     {
         title: "The Pokemon Name Game",
-        tools: ["javascript", " css", "html"],
-        description: "Pokemon word guessing game",
-        //maybe do carousel for this as well?
+        tools: ["javascript", " css3", "html5"],
+        description: "A simple Pokemon name guessing game, where you pick the generation and try to guess which Pokemon it could be.",
         img: [imgGame01, imgGame02],
         liveSiteButton: "https://www.google.ca",
         gitHubButton: "google.ca",
-        highlights: "-thing 1 - thing 2",
-        learned: "lorem ipsum",
+        details: (
+            <div className="mt-1">
+                <div>
+                    <strong>Generation Selection and Difficulty:</strong>
+                    <p className="ml-2 mb-2">Enables players to choose which generation of Pokemon to guess from, randomly picking one based off the difficulty which determines the length of the name you need to guess.
+                    </p>
+                </div>
+                <div>
+                    <strong>User-Friendly Interface:</strong>
+                    <p className="ml-2 mb-2">
+               
+                    </p>
+                </div>
+                <div>
+                    <strong>Saving Favourite Movies:</strong>
+                    <p className="ml-2 mb-2">
+                        Favouriting a movie will store the data in Local Storage, making all your favourites available next time you visit the webpage.
+                    </p>
+                </div>
+            </div>
+        ),
+        highlights: (
+            <div className="ml-4 ">
+                <ul className="list-disc">
+                    <li className="mb-2">Although it's not completely polished, it was super cool making a functional game and having everything work as expected (since this was my first big project made with JavaScript)</li>
+                    <li className="mb-2">Problem-solving the bugs helped me gain a better understanding of JavaScript as well as think of every possible edge case for future projects.
+                    </li>
+                    <li className="mb-2"></li>
+                    <li className="mb-2"> </li>
+                </ul>
+            </div>
+        ),
 
     },
     {
         title: "Coming Soon",
         tools: [],
         description: "",
-        //maybe do carousel for this as well?
         img: [imgGame01],
         liveSiteButton: "google.ca",
         gitHubButton: "google.ca",
-        highlights: "-thing 1 - thing 2",
-        learned: "lorem ipsum",
+        details: "-thing 1 - thing 2",
+        highlights: "lorem ipsum",
 
     }
 ]

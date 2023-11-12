@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
-import HomePage from './components/HomePage.jsx'
+import HomePage from './components/HomePage'
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";

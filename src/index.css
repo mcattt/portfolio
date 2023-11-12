@@ -52,6 +52,9 @@
 
 
 
+
+
+@media (min-width: 950px){
 .gradient-svg-1 path {
     fill: url('#white1');
   }
@@ -66,7 +69,9 @@
     stop-color: #FF9CEB;
   }
 
+
   
+ 
 .gradient-svg-2 path {
     fill: url('#white2');
   }
@@ -93,3 +98,4 @@
   .gradient-svg-3:hover stop:last-child {
     stop-color: #FF9CEB;
   }
+}
