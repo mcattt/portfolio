@@ -51,15 +51,51 @@
 }
 
 
+.gradient-svg-1 path {
+  fill: url('#white1');
+}
+.gradient-svg-1 stop:first-child {
+  stop-color: #8797FF;
+}
+.gradient-svg-1 stop:last-child {
+  stop-color: #FF9CEB;
+}
+.gradient-svg-2 path {
+  fill: url('#white2');
+}
+.gradient-svg-2 stop:first-child {
+  stop-color: #8797FF;
+}
+.gradient-svg-2 stop:last-child {
+  stop-color: #FF9CEB;
+}
+.gradient-svg-3 path {
+  fill: url('#white3');
+}
+.gradient-svg-3 stop:first-child {
+  stop-color: #8797FF;
+}
+.gradient-svg-3 stop:last-child {
+  stop-color: #FF9CEB;
+}
 
 
 
-@media (min-width: 950px){
+
+
+
+@media (min-width: 900px){
 .gradient-svg-1 path {
     fill: url('#white1');
   }
   stop {
     transition: 0.5s;
+  }
+  .gradient-svg-1 stop:first-child {
+    stop-color: rgb(55 65 81);
+  }
+  .gradient-svg-1 stop:last-child {
+    stop-color: rgb(55 65 81);
   }
   
   .gradient-svg-1:hover stop:first-child {
@@ -70,13 +106,17 @@
   }
 
 
-  
- 
-.gradient-svg-2 path {
+  .gradient-svg-2 path {
     fill: url('#white2');
   }
   stop {
     transition: 0.5s;
+  }
+  .gradient-svg-2 stop:first-child {
+    stop-color: rgb(55 65 81);
+  }
+  .gradient-svg-2 stop:last-child {
+    stop-color: rgb(55 65 81);
   }
   
   .gradient-svg-2:hover stop:first-child {
@@ -85,11 +125,18 @@
   .gradient-svg-2:hover stop:last-child {
     stop-color: #FF9CEB;
   }
+
   .gradient-svg-3 path {
     fill: url('#white3');
   }
   stop {
     transition: 0.5s;
+  }
+  .gradient-svg-3 stop:first-child {
+    stop-color: rgb(55 65 81);
+  }
+  .gradient-svg-3 stop:last-child {
+    stop-color: rgb(55 65 81);
   }
   
   .gradient-svg-3:hover stop:first-child {
@@ -98,4 +145,10 @@
   .gradient-svg-3:hover stop:last-child {
     stop-color: #FF9CEB;
   }
+
+
+  
+  
+
+  
 }

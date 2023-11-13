@@ -9,19 +9,24 @@ const Header = () => {
         <div>
             <header className=" w-full fixed  top-0  z-[9999] ">
                 <nav>
-                    <ul className=" py-1 px-1 float-right bg-opacity-50 rounded-bl-xl bg-background  w-32  desktop:bg-transparent  flex gap-2  mr-2">
-                        <li className="bg-black rounded-full">
-                            <img src={email} alt="" />
+                    <ul className=" py-1 px-1 float-right bg-opacity-50 rounded-bl-xl bg-background  w-36  desktop:bg-transparent  flex gap-3  mr-2">
+                        <a href="mailto: mcordner@my.bcit.ca">
+                            <li className="bg-black rounded-full">
+                                <img src={email} alt="email icon" />
+                            </li>
+                        </a>
+                        <a href="https://github.com/mcattt">
+                            <li className="bg-black rounded-full">
+                                <img src={github} alt="github icon" />
 
-                        </li>
-                        <li className="bg-black rounded-full">
-                            <img src={github} alt="" />
+                            </li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/catcordner/">
+                            <li className="bg-black rounded-full">
+                                <img src={linkedin} alt="linkedin icon" />
 
-                        </li>
-                        <li className="bg-black rounded-full">
-                            <img src={linkedin} alt="" />
-
-                        </li>
+                            </li>
+                        </a>
                     </ul>
                 </nav>
             </header>
