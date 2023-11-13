@@ -7,7 +7,7 @@ const Contact = () => {
 
         <div id="contact" className={`mx-4  pb-36   `} >
             <div className={`duration-1000 transition-all ${hasBeenActive ? 'delay-300 translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-                < p className='text-base text-center  font-light max-w-[600px] mx-auto' > I'm eager to dive into the tech industry, collaborate on exciting projects, and continue learning. Whether you want to discuss opportunities or simply share your thoughts on tech and gaming, lets connect!</p>
+                < p className='text-base text-center breakpoint-1080:text-lg font-light max-w-[600px] mx-auto' > I'm eager to dive into the tech industry, collaborate on exciting projects, and continue learning. Whether you want to discuss opportunities or simply share your thoughts on tech and gaming, lets connect!</p>
 
 
                 < div className='flex flex-row  justify-evenly mt-12 bg-gray-700 mx-auto py-10 rounded-2xl bg-opacity-30   max-w-lg' >

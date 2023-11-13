@@ -45,11 +45,11 @@ export const CarouselItem = ({ item }) => {
                 <div className="flex justify-evenly my-6 text-[16px] desktop:mb-0 desktop:mt-12 desktop:text-lg ">
 
                     <button className=" border px-4 rounded-sm outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:rounded-none hover:outline-offset-[5px] hover:outline-white/0" >
-                        <a href={item.liveSiteButton}>Live Site</a>
+                        <a href={item.liveSiteButton} target="_blank">Live Site</a>
                     </button>
                     <button className=" border px-4 rounded-sm outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:rounded-none hover:outline-offset-[5px] hover:outline-white/0" >
 
-                        {<a href={item.gitHubButton}>Github</a>}</button>
+                        {<a href={item.gitHubButton} target="_blank" >Github</a>}</button>
 
                 </div>
 

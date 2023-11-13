@@ -11,8 +11,8 @@ const items = [
         tools: ["react", "tailwind", "vite"],
         description: "MovieClip is a website created by myself and two classmates. It's a dynamic movie database built using React and the TMDB API, focusing on user-friendly features and responsive design.",
         img: [imgDataBase01, imgDataBase02],
-        liveSiteButton: "google.ca",
-        gitHubButton: "google.ca",
+        liveSiteButton: "https://catcordner.ca/movieclip/",
+        gitHubButton: "https://github.com/mcattt",
         details: (
             <div className="mt-1">
                 <div>
@@ -52,8 +52,8 @@ const items = [
         tools: ["javascript", " css3", "html5"],
         description: "A simple Pokemon name guessing game, where you pick the generation and try to guess which Pokemon it could be.",
         img: [imgGame01, imgGame02],
-        liveSiteButton: "https://www.google.ca",
-        gitHubButton: "google.ca",
+        liveSiteButton: "https://catcordner.ca/game/",
+        gitHubButton: "https://github.com/mcattt/guess-that-pokemon-name",
         details: (
             <div className="mt-1">
                 <div>
@@ -64,7 +64,7 @@ const items = [
                 <div>
                     <strong>User-Friendly Interface:</strong>
                     <p className="ml-2 mb-2">
-               
+
                     </p>
                 </div>
                 <div>
@@ -128,25 +128,18 @@ export const Carousel = () => {
         setActiveIndex(newIndex);
     }
     return (
+
         <div className=" flex flex-col justify-center overflow-hidden ">
-            <div className=" whitespace-nowrap transition  transform duration-500 mt-3"
-                style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-            >
-                {items.map((item) => {
-                    return <CarouselItem item={item} />;
-                })}
+            <div className="">
 
-            </div>
-            <div className="flex justify-evenly">
-
-                <div className="flex justify-around items-center">
+                <div className="flex   mb-4 desktop:mb-16">
                     {items.map((item, index) => {
                         return (
                             <button
                                 onClick={() => {
                                     updateIndex(index);
                                 }}
-                                className={`mb-36 breakpoint-560:mb-0 flex w-2 h-2 text-[8px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-start w-[80px] h-[25px] ' : 'bg-gray-400 w-[25px] h-[25px]'
+                                className={` breakpoint-560:mb-0 flex w-2 h-2 text-[8px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-start w-[80px] h-[25px] ' : 'bg-gray-400 w-[25px] h-[25px]'
                                     }`}
                             >
 
@@ -158,6 +151,15 @@ export const Carousel = () => {
 
 
             </div>
+            <div className=" whitespace-nowrap transition  transform duration-500 mt-3"
+                style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+            >
+                {items.map((item) => {
+                    return <CarouselItem item={item} />;
+                })}
+
+            </div>
+
 
         </div >
 
