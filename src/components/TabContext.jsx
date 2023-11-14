@@ -62,7 +62,7 @@ export const TabProvider = ({ children }) => {
             updateActiveTab('projects');
         } else if (
             scrollTop >= aboutSection.offsetTop - offset &&
-            scrollTop < contactSection.offsetTop - offset
+            scrollTop < contactSection.offsetTop - contactOffset
         ) {
             updateActiveTab('about');
         } else if (scrollTop >= contactSection.offsetTop - contactOffset) {
@@ -79,9 +79,6 @@ export const TabProvider = ({ children }) => {
 
         window.addEventListener('scroll', handleScrollAndStorage);
         handleScrollAndStorage();
-
-        console.log('Retrieved activeTab:', sessionStorage.getItem('activeTab'));
-        console.log('Retrieved activeTabHistory:', sessionStorage.getItem('activeTabHistory'));
 
         return () => {
             window.removeEventListener('scroll', handleScrollAndStorage);
