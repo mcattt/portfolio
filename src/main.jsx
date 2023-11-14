@@ -13,17 +13,15 @@ import BackgroundBlur from './components/BackgroundBlur';
 import { TabProvider } from './components/TabContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
 
-    <TabProvider>
-      <Header />
-      <SideNav />
-      <BackgroundBlur />
-      <HomePage />
-      <Projects />
-      <About />
-      <Contact />
-      <Footer />
-    </TabProvider>
-  </React.StrictMode>,
+  <TabProvider>
+    <Header />
+    <SideNav />
+    <BackgroundBlur />
+    <HomePage />
+    <Projects />
+    <About />
+    <Contact />
+    <Footer />
+  </TabProvider>
 )
