@@ -37,52 +37,55 @@ export const TabProvider = ({ children }) => {
     // Initialize hasBeenActive based on activeTabHistory
     const hasBeenActive = initializeHasBeenActive(activeTab);
 
-    const handleScroll = () => {
-        const homeSection = document.getElementById('home');
-        const aboutSection = document.getElementById('about');
-        const projectsSection = document.getElementById('projects');
-        const contactSection = document.getElementById('contact');
-        const scrollTop = window.scrollY;
-        const offset = 600;
-        if (document.documentElement.clientHeight >= 1032) {
-            setContactOffset(1000);
-        } else {
-            setContactOffset(600);
-        }
-
-        if (
-            scrollTop >= homeSection.offsetTop - offset &&
-            scrollTop < projectsSection.offsetTop - offset
-        ) {
-            updateActiveTab('home');
-        } else if (
-            scrollTop >= projectsSection.offsetTop - offset &&
-            scrollTop < aboutSection.offsetTop - offset
-        ) {
-            updateActiveTab('projects');
-        } else if (
-            scrollTop >= aboutSection.offsetTop - offset &&
-            scrollTop < contactSection.offsetTop - contactOffset
-        ) {
-            updateActiveTab('about');
-        } else if (scrollTop >= contactSection.offsetTop - contactOffset) {
-            updateActiveTab('contact');
-        }
-    };
-
     useEffect(() => {
-        const handleScrollAndStorage = () => {
-            handleScroll();
-            sessionStorage.setItem('activeTab', activeTab);
-            sessionStorage.setItem('activeTabHistory', JSON.stringify(activeTabHistory));
+        const handleScroll = () => {
+            // Your scroll logic here
+            const homeSection = document.getElementById('home');
+            const aboutSection = document.getElementById('about');
+            const projectsSection = document.getElementById('projects');
+            const contactSection = document.getElementById('contact');
+            const scrollTop = window.scrollY;
+            const offset = 600;
+            if (document.documentElement.clientHeight >= 1032) {
+                setContactOffset(1000);
+            } else {
+                setContactOffset(600);
+            }
+
+            if (
+                scrollTop >= homeSection.offsetTop - offset &&
+                scrollTop < projectsSection.offsetTop - offset
+            ) {
+                updateActiveTab('home');
+            } else if (
+                scrollTop >= projectsSection.offsetTop - offset &&
+                scrollTop < aboutSection.offsetTop - offset
+            ) {
+                updateActiveTab('projects');
+            } else if (
+                scrollTop >= aboutSection.offsetTop - offset &&
+                scrollTop < contactSection.offsetTop - contactOffset
+            ) {
+                updateActiveTab('about');
+            } else if (scrollTop >= contactSection.offsetTop - contactOffset) {
+                updateActiveTab('contact');
+            }
         };
 
-        window.addEventListener('scroll', handleScrollAndStorage);
-        handleScrollAndStorage();
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Initial call
 
         return () => {
-            window.removeEventListener('scroll', handleScrollAndStorage);
+            window.removeEventListener('scroll', handleScroll);
         };
+    }, [activeTab, contactOffset]);
+
+    useEffect(() => {
+        const newActiveTabHistory = JSON.stringify(activeTabHistory);
+        if (sessionStorage.getItem('activeTabHistory') !== newActiveTabHistory) {
+            sessionStorage.setItem('activeTab', activeTab);
+            sessionStorage.setItem('activeTabHistory', newActiveTabHistory);
+        }
     }, [activeTab, activeTabHistory]);
 
     return (

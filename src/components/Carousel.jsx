@@ -171,14 +171,14 @@ export const Carousel = () => {
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
         >
-            <div className="mb-4 desktop:mb-16">
+            <div className="mb-4 desktop:mb-16 flex">
                 {items.map((item, index) => (
                     <button
                         key={index}
                         onClick={() => setActiveIndex(index)}
                         className={`breakpoint-560:mb-0 flex w-2 h-2 text-[8px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex
-                                ? "bg-gradient-1-start w-[80px] h-[25px]"
-                                : "bg-gray-400 w-[25px] h-[25px]"
+                            ? "bg-gradient-1-start w-[80px] h-[25px]"
+                            : "bg-gray-400 w-[25px] h-[25px]"
                             }`}
                     >
                         {isActive(index, activeIndex)}
