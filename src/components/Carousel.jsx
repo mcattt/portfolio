@@ -38,10 +38,50 @@ const items = [
             <div className="ml-4 ">
                 <ul className="list-disc">
                     <li className="mb-2">Learning Tailwind (we wanted to take the extra initiative since it wasn't taught in the program)</li>
-                    <li className="mb-2">Having a team with similar workflows and motivations made this a super fun project to do
-                    </li>
-                    <li className="mb-2">Being able to utilize GitHub and really learn how to use it within a team setting</li>
                     <li className="mb-2">Creating the live site to be a 1:1 of the mockup felt super rewarding and reinforced my passion of Web Development! </li>
+                </ul>
+            </div>
+        ),
+
+    },
+    {
+        title: "Crust & Crumb - WIP",
+        tools: ["wordpress", "woocommerce", "sass"],
+        description: "An E-Commerce website for local bakery Crust & Crumb done with a team of four, made using WordPress with WooCommerce integration.",
+        img: [imgGame01],
+        liveSiteButton: "https://crustandcrumb.bcitwebdeveloper.ca/",
+        gitHubButton: "https://github.com/mcattt/",
+        details: (
+            <div className="mt-1">
+                <div>
+                    <strong>Advanced Custom Fields (ACF) Integration:</strong>
+                    <p className="ml-2 mb-2">
+                        Used ACF for flexible content management, enabling easy addition and dynamic control of product details, enhancing the user interface.
+                    </p>
+                </div>
+                <div>
+                    <strong>E-Commerce Integration:</strong>
+                    <p className="ml-2 mb-2">
+                        Integrated WooCommerce seamlessly for a secure and user-friendly online ordering experience, configuring product pages, cart functionality, and checkout processes.
+                    </p>
+                </div>
+                <div>
+                    <strong>Collaborative Git Workflow:</strong>
+                    <p className="ml-2 mb-2">
+                        Implemented Git within our team, using version control for efficient code management, issue tracking, and seamless team collaboration.
+                    </p>
+                </div>
+            </div>
+        ),
+        highlights: (
+            <div className="ml-4 ">
+                <ul className="list-disc">
+                    <li className="mb-2">
+                        During this process and my team and I made sure to finish everything way before the deadlines we gave ourselves. Finishing early showed we're committed to quality work and meeting deadlines, and taught me that careful planning makes a big difference in the development process.
+                    </li>
+                    <li className="mb-2">
+                        This project gave me a much better understanding of Wordpress and how to best integrate WooCommerce for a seamless and professional website.
+                    </li>
                 </ul>
             </div>
         ),
@@ -62,43 +102,24 @@ const items = [
                     </p>
                 </div>
                 <div>
-                    <strong>User-Friendly Interface:</strong>
+                    <strong>Dynamic Points Calculation:</strong>
                     <p className="ml-2 mb-2">
+                        Points gained/lost change based on difficulty level chosen and using hints will randomly show one letter, but will not award any points..
+                    </p>
+                </div>
 
-                    </p>
-                </div>
-                <div>
-                    <strong>Saving Favourite Movies:</strong>
-                    <p className="ml-2 mb-2">
-                        Favouriting a movie will store the data in Local Storage, making all your favourites available next time you visit the webpage.
-                    </p>
-                </div>
             </div>
         ),
         highlights: (
             <div className="ml-4 ">
                 <ul className="list-disc">
                     <li className="mb-2">Although it's not completely polished, it was super cool making a functional game and having everything work as expected (since this was my first big project made with JavaScript)</li>
-                    <li className="mb-2">Problem-solving the bugs helped me gain a better understanding of JavaScript as well as think of every possible edge case for future projects.
-                    </li>
-                    <li className="mb-2"></li>
-                    <li className="mb-2"> </li>
+                    <li className="mb-2">Problem-solving the bugs helped me gain a better understanding of JavaScript as well as think of every possible edge case for future projects.</li>
                 </ul>
             </div>
         ),
 
     },
-    {
-        title: "Coming Soon",
-        tools: [],
-        description: "",
-        img: [imgGame01],
-        liveSiteButton: "google.ca",
-        gitHubButton: "google.ca",
-        details: "-thing 1 - thing 2",
-        highlights: "lorem ipsum",
-
-    }
 ]
 
 export const Carousel = () => {
