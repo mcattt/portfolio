@@ -122,68 +122,79 @@ const items = [
     },
 ]
 
+const isActive = (num, activeIndex) => {
+    if (num === activeIndex) {
+        return <span className="text-white">{num + 1}</span>;
+    } else {
+        return <span className="text-black">{num + 1}</span>;
+    }
+};
+
 export const Carousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
+    const [touchStart, setTouchStart] = useState(0);
 
+    const handleTouchStart = (e) => {
+        setTouchStart(e.touches[0].clientX);
+    };
 
-    function isActive(num) {
-        if (num === activeIndex) {
-            return (
-                <span className="  text-white">{num + 1}</span>
-            );
-        } else {
-            return (
-                <span className=" text-black">{num + 1}</span>
-            );
+    const handleTouchMove = (e) => {
+        const touchEnd = e.touches[0].clientX;
+        const touchDiff = touchEnd - touchStart;
+
+        if (touchDiff > 50) {
+            // Swipe right
+            updateIndex(activeIndex - 1);
+            setTouchStart(touchEnd); // Update touchStart to prevent continuous updates
+        } else if (touchDiff < -50) {
+            // Swipe left
+            updateIndex(activeIndex + 1);
+            setTouchStart(touchEnd); // Update touchStart to prevent continuous updates
         }
-    }
-
-
+    };
 
     const updateIndex = (newIndex) => {
+        const lastIndex = items.length - 1;
+
         if (newIndex < 0) {
+            newIndex = lastIndex;
+        } else if (newIndex > lastIndex) {
             newIndex = 0;
-        } else if (newIndex >= items.length) {
-            newIndex = items.length - 1;
         }
+
         setActiveIndex(newIndex);
-    }
+    };
+
     return (
-
-        <div className=" flex flex-col justify-center overflow-hidden ">
-            <div className="">
-
-                <div className="flex   mb-4 desktop:mb-16">
-                    {items.map((item, index) => {
-                        return (
-                            <button
-                                onClick={() => {
-                                    updateIndex(index);
-                                }}
-                                className={` breakpoint-560:mb-0 flex w-2 h-2 text-[8px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex ? 'bg-gradient-1-start w-[80px] h-[25px] ' : 'bg-gray-400 w-[25px] h-[25px]'
-                                    }`}
-                            >
-
-                                {isActive(index)}</button>
-                        );
-                    })}
-                </div>
-
-
-
+        <div
+            className="flex flex-col justify-center overflow-hidden"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+        >
+            <div className="mb-4 desktop:mb-16">
+                {items.map((item, index) => (
+                    <button
+                        key={index}
+                        onClick={() => setActiveIndex(index)}
+                        className={`breakpoint-560:mb-0 flex w-2 h-2 text-[8px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex
+                                ? "bg-gradient-1-start w-[80px] h-[25px]"
+                                : "bg-gray-400 w-[25px] h-[25px]"
+                            }`}
+                    >
+                        {isActive(index, activeIndex)}
+                    </button>
+                ))}
             </div>
-            <div className=" whitespace-nowrap transition  transform duration-500 mt-3"
+            <div
+                className="whitespace-nowrap transition transform duration-500 mt-3"
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
             >
-                {items.map((item) => {
-                    return <CarouselItem item={item} />;
-                })}
-
+                {items.map((item, index) => (
+                    <CarouselItem key={index} item={item} />
+                ))}
             </div>
-
-
-        </div >
-
+        </div>
     );
 };
+
 export default Carousel;
