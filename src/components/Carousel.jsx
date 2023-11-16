@@ -12,7 +12,7 @@ const items = [
         description: "MovieClip is a website created by myself and two classmates. It's a dynamic movie database built using React and the TMDB API, focusing on user-friendly features and responsive design.",
         img: [imgDataBase01, imgDataBase02],
         liveSiteButton: "https://catcordner.ca/movieclip/",
-        gitHubButton: "https://github.com/mcattt",
+        gitHubButton: "https://github.com/mcattt/Movie-DB",
         details: (
             <div className="mt-1">
                 <div>

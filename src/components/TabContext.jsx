@@ -80,6 +80,8 @@ export const TabProvider = ({ children }) => {
         };
     }, [activeTab, contactOffset]);
 
+
+    //was causing issues before
     useEffect(() => {
         const newActiveTabHistory = JSON.stringify(activeTabHistory);
         if (sessionStorage.getItem('activeTabHistory') !== newActiveTabHistory) {
