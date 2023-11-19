@@ -5,6 +5,7 @@ import imgDataBase01 from "../assets/images/database-1.png";
 import imgDataBase02 from "../assets/images/database-2.png";
 import imgGame01 from "../assets/images/game-1.png";
 import imgGame02 from "../assets/images/game-2.png";
+import imgcrustAndCrumb from "../assets/images/crust-and-crumb-placeholder.png";
 const items = [
     {
         title: "Movie Database",
@@ -48,9 +49,9 @@ const items = [
         title: "Crust & Crumb - WIP",
         tools: ["wordpress", "woocommerce", "sass"],
         description: "An E-Commerce website for local bakery Crust & Crumb done with a team of four, made using WordPress with WooCommerce integration.",
-        img: [imgGame01],
-        liveSiteButton: "https://crustandcrumb.bcitwebdeveloper.ca/",
-        gitHubButton: "https://github.com/mcattt/",
+        img: [imgcrustAndCrumb],
+        liveSiteButton: "coming soon",
+        gitHubButton: "coming soon",
         details: (
             <div className="mt-1">
                 <div>
@@ -66,10 +67,13 @@ const items = [
                     </p>
                 </div>
                 <div>
-                    <strong>Collaborative Git Workflow:</strong>
+                    <strong>Collaborative GitHub Workflow:</strong>
                     <p className="ml-2 mb-2">
-                        Implemented Git within our team, using version control for efficient code management, issue tracking, and seamless team collaboration.
+                        Implemented GitHub within our team, using version control for efficient code management, issue tracking, and seamless team collaboration.
                     </p>
+                </div>
+                <div>
+                    <strong>More to come..</strong>
                 </div>
             </div>
         ),
@@ -81,6 +85,9 @@ const items = [
                     </li>
                     <li className="mb-2">
                         This project gave me a much better understanding of Wordpress and how to best integrate WooCommerce for a seamless and professional website.
+                    </li>
+                    <li className="mb-2">
+                        More to come..
                     </li>
                 </ul>
             </div>
@@ -104,7 +111,7 @@ const items = [
                 <div>
                     <strong>Dynamic Points Calculation:</strong>
                     <p className="ml-2 mb-2">
-                        Points gained/lost change based on difficulty level chosen and using hints will randomly show one letter, but will not award any points..
+                        Points gained/lost change based on difficulty level chosen and using hints will randomly show one letter, but will not award any points.
                     </p>
                 </div>
 
@@ -191,6 +198,20 @@ export const Carousel = () => {
             >
                 {items.map((item, index) => (
                     <CarouselItem key={index} item={item} />
+                ))}
+            </div>
+            <div className="mb-16 flex justify-center">
+                {items.map((item, index) => (
+                    <button
+                        key={index}
+                        onClick={() => setActiveIndex(index)}
+                        className={`breakpoint-560:mb-0 flex w-2 h-2 text-[8px]  self-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex
+                            ? "bg-gradient-1-start w-[18px] h-[18px]"
+                            : "bg-gray-400 w-[15px] h-[15px]"
+                            }`}
+                    >
+
+                    </button>
                 ))}
             </div>
         </div>

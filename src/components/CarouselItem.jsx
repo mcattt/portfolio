@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Accordion from "./Accordion";
 import ImageCarousel from "./ImageCarousel";
+
+
 
 const formatTools = (tools) => {
     const formattedTools = [];
@@ -20,6 +22,42 @@ const formatTools = (tools) => {
         );
     });
     return formattedTools;
+};
+
+const renderLiveSiteButton = (item) => {
+    if (item.liveSiteButton === "coming soon") {
+        return (
+            <button className="border px-4 py-1 rounded-sm group leading-none" disabled>
+                Live Site <br /><span className="text-xs ">(coming soon)</span>
+            </button>
+        );
+    } else {
+        return (
+            <a href={item.liveSiteButton} target="_blank" rel="noopener noreferrer">
+                <button className="border px-4 rounded-sm outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:rounded-none hover:outline-offset-[5px] hover:outline-white/0">
+                    Live Site
+                </button>
+            </a>
+        );
+    }
+};
+
+const renderGitHubButton = (item) => {
+    if (item.gitHubButton === "coming soon") {
+        return (
+            <button className="border px-4 py-1 rounded-sm group leading-none" disabled>
+                GitHub <br /><span className="text-xs ">(coming soon)</span>
+            </button>
+        );
+    } else {
+        return (
+            <a href={item.gitHubButton} target="_blank" rel="noopener noreferrer">
+                <button className="border px-4 rounded-sm outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:rounded-none hover:outline-offset-[5px] hover:outline-white/0">
+                    GitHub
+                </button>
+            </a>
+        );
+    }
 };
 
 
@@ -44,12 +82,8 @@ export const CarouselItem = ({ item }) => {
 
                 <div className="flex justify-evenly my-6 text-[16px] desktop:mb-0 desktop:mt-12 desktop:text-lg ">
 
-                    <button className=" border px-4 rounded-sm outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:rounded-none hover:outline-offset-[5px] hover:outline-white/0" >
-                        <a href={item.liveSiteButton} target="_blank">Live Site</a>
-                    </button>
-                    <button className=" border px-4 rounded-sm outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:rounded-none hover:outline-offset-[5px] hover:outline-white/0" >
-
-                        {<a href={item.gitHubButton} target="_blank" >Github</a>}</button>
+                    {renderLiveSiteButton(item)}
+                    {renderGitHubButton(item)}
 
                 </div>
 
@@ -63,13 +97,13 @@ export const CarouselItem = ({ item }) => {
         <div className="  mx-auto  pb-10 ">
             <div className="  max-w-[450px] desktop:max-w-[800px] 
     bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start pt-[1px] px-[1px]     transition-all duration-500        ">
-                <div className="text-xl desktop:text-3xl bg-background   pl-2 pr-4 mt-[-1px] mx-[-1px] mb-[1px]">
+                <div className="text-xl desktop:text-3xl bg-background  py-[2px] pl-2 pr-4 mt-[-1px] mx-[-1px] mb-[1px]">
                     <Accordion title="Details" content={item.details} />
                 </div>
             </div>
             <div className=" max-w-[450px] desktop:max-w-[800px] 
     bg-gradient-to-r from-gradient-2-start via-gradient-1-end to-gradient-2-end p-[1px]  ">
-                <div className="text-xl desktop:text-3xl bg-background pl-2 pr-4  px-1 mx-[-1px]">
+                <div className="text-xl desktop:text-3xl bg-background pl-2 pr-4 py-[2px] px-1 mx-[-1px]">
                     <Accordion title="Highlights" content={item.highlights} />
                 </div>
             </div>

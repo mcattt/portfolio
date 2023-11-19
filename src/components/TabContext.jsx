@@ -39,17 +39,17 @@ export const TabProvider = ({ children }) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            // Your scroll logic here
+
             const homeSection = document.getElementById('home');
             const aboutSection = document.getElementById('about');
             const projectsSection = document.getElementById('projects');
             const contactSection = document.getElementById('contact');
             const scrollTop = window.scrollY;
-            const offset = 600;
+            const offset = 700;
             if (document.documentElement.clientHeight >= 1032) {
                 setContactOffset(1000);
             } else {
-                setContactOffset(600);
+                setContactOffset(700);
             }
 
             if (

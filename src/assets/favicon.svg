@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.25 512.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: SteppeTrial-Regular, 'Steppe Trial';
+        font-size: 450px;
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-2.78" y1="285.9" x2="509.22" y2="285.9" gradientTransform="translate(542.02 2.9) rotate(90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8792c8"/>
+      <stop offset=".8" stop-color="#e5a0c7"/>
+    </linearGradient>
+  </defs>
+  <g id="bg">
+    <circle class="cls-2" cx="256.12" cy="256.13" r="256"/>
+  </g>
+  <g id="letters">
+    <text class="cls-1" transform="translate(73.64 410.93)"><tspan x="0" y="0">C</tspan></text>
+  </g>
+</svg>
