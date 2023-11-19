@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTabContext } from './TabContext';
 import { scroller } from 'react-scroll';
 
@@ -10,7 +10,7 @@ const SideNav = () => {
       duration: 1200,
       delay: 50,
       smooth: true,
-      offset: -60, // Adjust the offset as needed to ensure the section is properly in view
+      offset: -60,
     });
   };
 

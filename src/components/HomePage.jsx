@@ -1,7 +1,6 @@
 import React from 'react';
 import downArrow from "../assets/images/arrow-down.png";
 import { scroller } from 'react-scroll';
-import { useMediaQuery } from "@react-hook/media-query";
 const HomePage = ({ }) => {
 
 
@@ -11,11 +10,10 @@ const HomePage = ({ }) => {
             duration: 1500,
             delay: 100,
             smooth: true,
-            offset: -60, // Adjust the offset as needed to ensure the section is properly in view
+            offset: -60,
         });
     };
 
-    // https://stackoverflow.com/questions/67150736/tailwind-background-gradient-transition
 
     return (
         <div id="home" className='min-h-screen h-auto flex justify-center items-center mx-4'>
@@ -41,7 +39,7 @@ const HomePage = ({ }) => {
                 </h2>
 
                 <div className='flex items-center flex-col mt-20 '>
-                    {/* <p className='mb-16 text-2xl breakpoint-1200:text-3xl breakpoint-1200:font-light  ' >see my projects</p> */}
+
                     <img id="arrow-ani" onClick={() => scrollToSection('projects')} src={downArrow} alt="black arrow pointing down" className='cursor-pointer w-10 animate-bounce ' />
                 </div>
             </div>

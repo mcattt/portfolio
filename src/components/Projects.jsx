@@ -4,7 +4,6 @@ import Carousel from './Carousel';
 const Projects = () => {
     const { activeTab, activeTabHistory } = useTabContext();
 
-    // Check if the "projects" tab is in the activeTabHistory
     const hasBeenActive = activeTabHistory['projects'];
 
 
