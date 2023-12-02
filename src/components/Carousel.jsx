@@ -5,7 +5,8 @@ import imgDataBase01 from "../assets/images/database-1.png";
 import imgDataBase02 from "../assets/images/database-2.png";
 import imgGame01 from "../assets/images/game-1.png";
 import imgGame02 from "../assets/images/game-2.png";
-import imgcrustAndCrumb from "../assets/images/crust-and-crumb-placeholder.png";
+import imgcrustAndCrumb1 from "../assets/images/crustandcrumb1.png";
+import imgcrustAndCrumb2 from "../assets/images/crustandcrumb2.png";
 const items = [
     {
         title: "Movie Database",
@@ -24,7 +25,7 @@ const items = [
                 <div>
                     <strong>Detailed Movie Pages:</strong>
                     <p className="ml-2 mb-2">
-                        Clicking on a movie reveals comprehensive details, including cast, crew, plot summary, release date, and user ratings. Trailers are integrated when available.
+                        Clicking on a movie reveals  details, including cast, crew, plot summary, release date, and user ratings. Trailers are integrated when available.
                     </p>
                 </div>
                 <div>
@@ -46,12 +47,12 @@ const items = [
 
     },
     {
-        title: "Crust & Crumb - WIP",
+        title: "Crust & Crumb",
         tools: ["wordpress", "woocommerce", "sass"],
         description: "An E-Commerce website for local bakery Crust & Crumb done with a team of four, made using WordPress with WooCommerce integration.",
-        img: [imgcrustAndCrumb],
-        liveSiteButton: "coming soon",
-        gitHubButton: "coming soon",
+        img: [imgcrustAndCrumb1, imgcrustAndCrumb2],
+        liveSiteButton: "https://catcordner.ca/crustandcrumb/",
+        gitHubButton: "https://github.com/mcattt/crust-crumb",
         details: (
             <div className="mt-1">
                 <div>
@@ -63,18 +64,16 @@ const items = [
                 <div>
                     <strong>E-Commerce Integration:</strong>
                     <p className="ml-2 mb-2">
-                        Integrated WooCommerce seamlessly for a secure and user-friendly online ordering experience, configuring product pages, cart functionality, and checkout processes.
+                        Integrated WooCommerce for a secure and user-friendly online ordering experience, configuring product pages, cart functionality, and checkout processes.
                     </p>
                 </div>
                 <div>
-                    <strong>Collaborative GitHub Workflow:</strong>
+                    <strong>Custom JavaScript Components</strong>
                     <p className="ml-2 mb-2">
-                        Implemented GitHub within our team, using version control for efficient code management, issue tracking, and seamless team collaboration.
+                        Accordions, filtering, and checkout page all built using JavaScript.
                     </p>
                 </div>
-                <div>
-                    <strong>More to come..</strong>
-                </div>
+
             </div>
         ),
         highlights: (
@@ -87,7 +86,7 @@ const items = [
                         This project gave me a much better understanding of Wordpress and how to best integrate WooCommerce for a seamless and professional website.
                     </li>
                     <li className="mb-2">
-                        More to come..
+                        I have a much better understanding of PHP as well as JavaScript and how to best use them both within a WordPress site, which will carry over to other projects I work on.
                     </li>
                 </ul>
             </div>
