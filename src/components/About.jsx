@@ -22,7 +22,7 @@ const About = () => {
     ];
 
     return (
-        <div id="about" className='px-4 desktop:px-6 desktop:max-w-[1200px] desktop:mx-auto pb-16 desktop:pb-40'>
+        <div id="about" className='px-4 desktop:px-6 desktop:max-w-[1500px] desktop:mx-auto pb-16 desktop:pb-40'>
             <div id='about-description'>
                 <h2 className={`mb-3 text-5xl transition-all duration-1000 font-extradica  desktop:text-6xl  ${hasBeenActive ? 'translate-y-0 opacity-100' : 'translate-x-4 opacity-0'}`}>About Me</h2>
                 <div className={` px-1 `}>
@@ -48,7 +48,7 @@ const About = () => {
                     <div className="grid grid-cols-3 breakpoint-450:grid-cols-4 mx-auto breakpoint-560:flex breakpoint-560:gap-5 px-2 breakpoint-560:justify-center max-w-[650px] flex-wrap  gap-y-1 gap-x-1  content-center items-center  ">
                         {skills.map((skill) => (
                             <div key={skill.name} className=" cursor-default flex flex-col justify-center items-center  gap-1 breakpoint-560:text-lg text-base font-[500] desktop:hover:translate-y-[-2px] duration-150">
-                                <i className={` ${skill.icon} text-4xl breakpoint-560:text-5xl`} />
+                                <i className={`${skill.icon} text-4xl breakpoint-560:text-5xl`} />
                                 <p>{skill.name}</p>
                             </div>
                         ))}

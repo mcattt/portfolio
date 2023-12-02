@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { CarouselItem } from "./CarouselItem";
-
-import imgDataBase01 from "../assets/images/database-1.jpg";
-import imgDataBase02 from "../assets/images/database-2.jpg";
-import imgGame01 from "../assets/images/game-1.jpg";
-import imgGame02 from "../assets/images/game-2.jpg";
-import imgcrustAndCrumb1 from "../assets/images/crustandcrumb1.jpg";
-import imgcrustAndCrumb2 from "../assets/images/crustandcrumb2.jpg";
+import imgDataBase01 from "../assets/images/webp/database-1.webp";
+import imgDataBase02 from "../assets/images/webp/database-2.webp";
+import imgGame01 from "../assets/images/webp/game-1.webp";
+import imgGame02 from "../assets/images/webp/game-2.webp";
+import imgcrustAndCrumb1 from "../assets/images/webp/crustandcrumb1.webp";
+import imgcrustAndCrumb2 from "../assets/images/webp/crustandcrumb2.webp";
 const items = [
     {
         title: "Movie Database",

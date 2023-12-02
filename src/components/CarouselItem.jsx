@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Accordion from "./Accordion";
 import ImageCarousel from "./ImageCarousel";
 
@@ -95,8 +95,8 @@ export const CarouselItem = ({ item }) => {
 
 
             </div>
-            <div className=" whitespace-normal mb-4 desktop:row-span-2 desktop:col-start-2 desktop:ml-6 desktop:mb-0 desktop:mt-10 mx-auto">
-                <div className=""><p className="font-light text-base desktop:text-xl">{item.description}</p></div>
+            <div className=" whitespace-normal mb-4 desktop:row-span-2 desktop:col-start-2 desktop:ml-6 desktop:mb-0 breakpoint-1200:mt-10 mx-auto">
+                <div className=""><p className="font-light text-base desktop:text-xl breakpoint-1200:text-2xl">{item.description}</p></div>
             </div>
 
         </div>

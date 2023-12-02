@@ -34,6 +34,7 @@ export default {
         "extradica": ['extradica', 'sans-serif'],
         "sans": ['steppe', 'sans-serif'],
       },
+
       screens: {
         "desktop": "900px",
         'breakpoint-450': "450px",
