@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { CarouselItem } from "./CarouselItem";
 
-import imgDataBase01 from "../assets/images/database-1.png";
-import imgDataBase02 from "../assets/images/database-2.png";
-import imgGame01 from "../assets/images/game-1.png";
-import imgGame02 from "../assets/images/game-2.png";
-import imgcrustAndCrumb1 from "../assets/images/crustandcrumb1.png";
-import imgcrustAndCrumb2 from "../assets/images/crustandcrumb2.png";
+import imgDataBase01 from "../assets/images/database-1.jpg";
+import imgDataBase02 from "../assets/images/database-2.jpg";
+import imgGame01 from "../assets/images/game-1.jpg";
+import imgGame02 from "../assets/images/game-2.jpg";
+import imgcrustAndCrumb1 from "../assets/images/crustandcrumb1.jpg";
+import imgcrustAndCrumb2 from "../assets/images/crustandcrumb2.jpg";
 const items = [
     {
         title: "Movie Database",
@@ -180,6 +180,8 @@ export const Carousel = () => {
             <div className="mb-4 desktop:mb-16 flex">
                 {items.map((item, index) => (
                     <button
+                        role="active project indicator"
+                        aria-label={`Go to next project`}
                         key={index}
                         onClick={() => setActiveIndex(index)}
                         className={`breakpoint-560:mb-0 flex w-2 h-2 text-[8px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex
@@ -203,6 +205,9 @@ export const Carousel = () => {
                 {items.map((item, index) => (
                     <button
                         key={index}
+                        role="active project button"
+                        aria-label={`Go to slide ${index + 1}`}
+
                         onClick={() => setActiveIndex(index)}
                         className={`breakpoint-560:mb-0 flex w-2 h-2 text-[8px]  self-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex
                             ? "bg-gradient-1-start w-[18px] h-[18px]"

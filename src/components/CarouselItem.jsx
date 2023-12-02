@@ -27,17 +27,20 @@ const formatTools = (tools) => {
 const renderLiveSiteButton = (item) => {
     if (item.liveSiteButton === "coming soon") {
         return (
-            <button className="border px-4 py-1 rounded-sm group leading-none" disabled>
+            <p className="border focus:border-gradient-1-end  focus:border-4 px-4 py-1 rounded-sm group leading-none cursor-not-allowed" disabled>
                 Live Site <br /><span className="text-xs ">(coming soon)</span>
-            </button>
+            </p>
         );
     } else {
         return (
-            <a href={item.liveSiteButton} target="_blank" rel="noopener noreferrer">
-                <button className="border px-4 rounded-sm outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:rounded-none hover:outline-offset-[5px] hover:outline-white/0">
-                    Live Site
-                </button>
-            </a>
+            <button
+                onClick={() => window.open(item.liveSiteButton, "_blank", "noopener noreferrer")}
+                className="border focus:border-gradient-1-end focus:border-4 px-4 rounded-sm outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:rounded-none hover:outline-offset-[5px] hover:outline-white/0"
+                aria-label={`Visit live site for ${item.title}`}
+                role="link"
+            >
+                Live Site
+            </button>
         );
     }
 };
@@ -45,17 +48,20 @@ const renderLiveSiteButton = (item) => {
 const renderGitHubButton = (item) => {
     if (item.gitHubButton === "coming soon") {
         return (
-            <button className="border px-4 py-1 rounded-sm group leading-none" disabled>
+            <p className="border focus:border-gradient-1-end focus:border-4 px-4 py-1 rounded-sm group leading-none cursor-not-allowed" disabled>
                 GitHub <br /><span className="text-xs ">(coming soon)</span>
-            </button>
+            </p>
         );
     } else {
         return (
-            <a href={item.gitHubButton} target="_blank" rel="noopener noreferrer">
-                <button className="border px-4 rounded-sm outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:rounded-none hover:outline-offset-[5px] hover:outline-white/0">
-                    GitHub
-                </button>
-            </a>
+            <button
+                onClick={() => window.open(item.gitHubButton, "_blank", "noopener noreferrer")}
+                className="border px-4 focus:border-gradient-1-end focus:border-4 rounded-sm outline outline-[1px] outline-white/50 outline-offset-0 shadow-[0_0_-20px_-20px_rgba(255,255,255,0)] transition-all duration-[600ms] hover:shadow-custom hover:rounded-none hover:outline-offset-[5px] hover:outline-white/0"
+                aria-label={`Visit github for ${item.title}`}
+                role="link">
+                GitHub
+            </button>
+
         );
     }
 };
