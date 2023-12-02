@@ -46,6 +46,7 @@ export const TabProvider = ({ children }) => {
             const contactSection = document.getElementById('contact');
             const scrollTop = window.scrollY;
             const offset = 700;
+            const projectOffset = 300;
             if (document.documentElement.clientHeight >= 1032) {
                 setContactOffset(1000);
             } else {
@@ -53,8 +54,8 @@ export const TabProvider = ({ children }) => {
             }
 
             if (
-                scrollTop >= homeSection.offsetTop - offset &&
-                scrollTop < projectsSection.offsetTop - offset
+                scrollTop >= homeSection.offsetTop &&
+                scrollTop < projectsSection.offsetTop - projectOffset
             ) {
                 updateActiveTab('home');
             } else if (
