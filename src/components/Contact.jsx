@@ -7,7 +7,7 @@ const Contact = () => {
 
         <article id="contact" className={`mx-4  pb-36   `} >
             <div className={`duration-1000 transition-all ${hasBeenActive ? 'delay-300 translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-                < p className='text-base text-center breakpoint-1080:text-lg font-light max-w-[600px] mx-auto' > I'm eager to dive into the tech industry, collaborate on exciting projects, and continue learning. Whether you want to discuss opportunities or simply share your thoughts on tech and gaming, lets connect!</p>
+                < p className='text-base text-center breakpoint-1080:text-lg breakpoint-1200:text-xl font-light max-w-[600px] mx-auto' > I'm eager to dive into the tech industry, collaborate on exciting projects, and continue learning. Whether you want to discuss opportunities or simply share your thoughts on tech and gaming, lets connect!</p>
                 < div className='flex flex-row  justify-evenly mt-12 bg-gray-700 mx-auto py-10 rounded-2xl bg-opacity-30   max-w-lg' >
                     <a href="mailto: cat.cordner@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Compose email to cat.cordner@gmail.com"> <svg xmlns="http://www.w3.org/2000/svg" width="3.5rem" height="3.5rem" viewBox="0 0 24 24" className='gradient-svg-1 cursor-pointer bg-white px-2  rounded-xl' >
                         <defs>

@@ -22,7 +22,7 @@ const ImageCarousel = ({ item }) => {
                     key={index}
                     src={image}
                     alt={`Image ${index + 1}`}
-                    className={`absolute transition-opacity duration-1000 shadow-[0_0_5px_5px_rgba(255,255,255,0.05)] ${index === currentImageIndex ? "opacity-100 " : "opacity-0 "}`}
+                    className={`absolute transition-opacity duration-1000 shadow-[0_0_6px_6px_rgba(255,255,255,0.05)] ${index === currentImageIndex ? "opacity-100 " : "opacity-0 "}`}
                 />
             ))}
         </div>

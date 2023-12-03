@@ -22,21 +22,21 @@ const About = () => {
     ];
 
     return (
-        <article id="about" className='px-4 desktop:px-6 desktop:max-w-[1500px] desktop:mx-auto pb-16 desktop:pb-40'>
+        <article id="about" className='px-4 desktop:px-6 desktop:max-w-[1200px] desktop:mx-auto pb-16 desktop:pb-44'>
             <div id='about-description'>
                 <h2 className={`mb-3 text-5xl transition-all duration-1000 font-extradica  desktop:text-6xl  ${hasBeenActive ? 'translate-y-0 opacity-100' : 'translate-x-4 opacity-0'}`}>About Me</h2>
                 <section className={` px-1 `}>
 
                     <div className={`mt-10 duration-1000 transition-all ${hasBeenActive ? 'translate-y-0 opacity-100 delay-200' : 'translate-x-[-1rem] opacity-0'}`}>
-                        <div className="mx-auto px-3 text-base desktop:text-lg breakpoint-1080:text-xl font-light">
-                            <p className='mb-2'>
+                        <div className="mx-auto px-3 text-base desktop:text-lg breakpoint-1080:text-xl breakpoint-1200:text-2xl font-light">
+                            <p className='mb-3 breakpoint-1200:mb-5'>
                                 Hello! I'm Cat, a recent grad from the Front-End Web Developer Program at BCIT.
                             </p>
-                            <p className='mb-2'>
+                            <p className='mb-3 breakpoint-1200:mb-5'>
                                 As a kid, my dream job was to be a video-game designer (though now I'd rather just play them) so I knew I wanted to do something in tech as a career.</p>
-                            <p className='mb-2'>
+                            <p className='mb-3 breakpoint-1200:mb-5'>
                                 Before I went to BCIT, I was in the Computer Science program at Langara College where I learned some back-end languages, such as C++ and Java. Having this previous knowledge has really helped me with problem solving and logic for the projects I work on in Web Development.</p>
-                            <p className='mb-2'>
+                            <p className='mb-3 breakpoint-1200:mb-5'>
                                 In my free time, I enjoy gaming (which I like to think has helped my ability to work with a team).
                             </p>
 
