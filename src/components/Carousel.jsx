@@ -15,7 +15,7 @@ const items = [
         liveSiteButton: "https://catcordner.ca/movieclip/",
         gitHubButton: "https://github.com/mcattt/Movie-DB",
         details: (
-            <div className="mt-1">
+            <section className="mt-1">
                 <div>
                     <strong>Search and Filter:</strong>
                     <p className="ml-2 mb-2">Users can easily search and filter movies by various criteria. Search wasn't required, but we wanted to add the functionality to make it more interactive.
@@ -33,15 +33,15 @@ const items = [
                         Favouriting a movie will store the data in Local Storage, making all your favourites available next time you visit the webpage.
                     </p>
                 </div>
-            </div>
+            </section>
         ),
         highlights: (
-            <div className="ml-4 ">
+            <section className="ml-4 ">
                 <ul className="list-disc">
                     <li className="mb-2">Learning Tailwind (we wanted to take the extra initiative since it wasn't taught in the program)</li>
                     <li className="mb-2">Creating the live site to be a 1:1 of the mockup felt super rewarding and reinforced my passion of Web Development! </li>
                 </ul>
-            </div>
+            </section>
         ),
 
     },
@@ -53,7 +53,7 @@ const items = [
         liveSiteButton: "https://catcordner.ca/crustandcrumb/",
         gitHubButton: "https://github.com/mcattt/crust-crumb",
         details: (
-            <div className="mt-1">
+            <section className="mt-1">
                 <div>
                     <strong>Advanced Custom Fields (ACF) Integration:</strong>
                     <p className="ml-2 mb-2">
@@ -73,10 +73,10 @@ const items = [
                     </p>
                 </div>
 
-            </div>
+            </section>
         ),
         highlights: (
-            <div className="ml-4 ">
+            <section className="ml-4 ">
                 <ul className="list-disc">
                     <li className="mb-2">
                         During this process and my team and I made sure to finish everything way before the deadlines we gave ourselves. Finishing early showed we're committed to quality work and meeting deadlines, and taught me that careful planning makes a big difference in the development process.
@@ -88,7 +88,7 @@ const items = [
                         I have a much better understanding of PHP as well as JavaScript and how to best use them both within a WordPress site, which will carry over to other projects I work on.
                     </li>
                 </ul>
-            </div>
+            </section>
         ),
 
     },
@@ -100,7 +100,7 @@ const items = [
         liveSiteButton: "https://catcordner.ca/game/",
         gitHubButton: "https://github.com/mcattt/guess-that-pokemon-name",
         details: (
-            <div className="mt-1">
+            <section className="mt-1">
                 <div>
                     <strong>Generation Selection and Difficulty:</strong>
                     <p className="ml-2 mb-2">Enables players to choose which generation of Pokemon to guess from, randomly picking one based off the difficulty which determines the length of the name you need to guess.
@@ -113,15 +113,15 @@ const items = [
                     </p>
                 </div>
 
-            </div>
+            </section>
         ),
         highlights: (
-            <div className="ml-4 ">
+            <section className="ml-4 ">
                 <ul className="list-disc">
                     <li className="mb-2">Although it's not completely polished, it was super cool making a functional game and having everything work as expected (since this was my first big project made with JavaScript)</li>
                     <li className="mb-2">Problem-solving the bugs helped me gain a better understanding of JavaScript as well as think of every possible edge case for future projects.</li>
                 </ul>
-            </div>
+            </section>
         ),
 
     },
@@ -171,7 +171,7 @@ export const Carousel = () => {
     };
 
     return (
-        <div
+        <section
             className="flex flex-col justify-center overflow-hidden"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
@@ -217,7 +217,7 @@ export const Carousel = () => {
                     </button>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

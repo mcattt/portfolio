@@ -22,13 +22,13 @@ const About = () => {
     ];
 
     return (
-        <div id="about" className='px-4 desktop:px-6 desktop:max-w-[1500px] desktop:mx-auto pb-16 desktop:pb-40'>
+        <article id="about" className='px-4 desktop:px-6 desktop:max-w-[1500px] desktop:mx-auto pb-16 desktop:pb-40'>
             <div id='about-description'>
                 <h2 className={`mb-3 text-5xl transition-all duration-1000 font-extradica  desktop:text-6xl  ${hasBeenActive ? 'translate-y-0 opacity-100' : 'translate-x-4 opacity-0'}`}>About Me</h2>
-                <div className={` px-1 `}>
+                <section className={` px-1 `}>
 
                     <div className={`mt-10 duration-1000 transition-all ${hasBeenActive ? 'translate-y-0 opacity-100 delay-200' : 'translate-x-[-1rem] opacity-0'}`}>
-                        <section className="mx-auto px-3 text-base desktop:text-lg breakpoint-1080:text-xl font-light   ">
+                        <div className="mx-auto px-3 text-base desktop:text-lg breakpoint-1080:text-xl font-light">
                             <p className='mb-2'>
                                 Hello! I'm Cat, a recent grad from the Front-End Web Developer Program at BCIT.
                             </p>
@@ -40,10 +40,10 @@ const About = () => {
                                 In my free time, I enjoy gaming (which I like to think has helped my ability to work with a team).
                             </p>
 
-                        </section>
+                        </div>
                     </div>
-                </div>
-                <div id="about-skills" className={`transition-all duration-1000 ${hasBeenActive ? 'translate-y-0 opacity-100 delay-500' : 'translate-x-4 opacity-0'}`}>
+                </section>
+                <section id="about-skills" className={`transition-all duration-1000 ${hasBeenActive ? 'translate-y-0 opacity-100 delay-500' : 'translate-x-4 opacity-0'}`}>
                     <p className='text-3xl mt-10 mb-10 mx-auto text-center breakpoint-1080:mt-36'>My Skillset</p>
                     <div className="grid grid-cols-3 breakpoint-450:grid-cols-4 mx-auto breakpoint-560:flex breakpoint-560:gap-5 px-2 breakpoint-560:justify-center max-w-[650px] flex-wrap  gap-y-1 gap-x-1  content-center items-center  ">
                         {skills.map((skill) => (
@@ -57,10 +57,10 @@ const About = () => {
                             <p className=" cursor-default     breakpoint-560:text-lg text-base font-[500] ">Shopify</p>
                         </div>
                     </div>
-                </div>
+                </section>
 
             </div>
-        </div >
+        </article >
 
 
     );

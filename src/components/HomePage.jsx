@@ -16,7 +16,7 @@ const HomePage = ({ }) => {
 
 
     return (
-        <div id="home" className='min-h-screen h-auto flex justify-center items-center mx-4'>
+        <article id="home" className='min-h-screen h-auto flex justify-center items-center mx-4'>
             <div className='flex flex-col  '>
                 <h1
                     className=" text-[6rem]  breakpoint-660:text-[7rem] breakpoint-1200:text-[10rem] leading-tight 
@@ -43,7 +43,7 @@ const HomePage = ({ }) => {
                     <img id="arrow-ani" onClick={() => scrollToSection('projects')} src={downArrow} alt="black arrow pointing down" className='cursor-pointer w-10 animate-bounce ' />
                 </div>
             </div>
-        </div >
+        </article >
     );
 }
 
