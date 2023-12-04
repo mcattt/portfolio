@@ -32,46 +32,49 @@ export const TabProvider = ({ children }) => {
         });
     };
 
-    const [contactOffset, setContactOffset] = useState(600);
+    const [contactOffset, setContactOffset] = useState(700);
 
     // Initialize hasBeenActive based on activeTabHistory
     const hasBeenActive = initializeHasBeenActive(activeTab);
 
     useEffect(() => {
         const handleScroll = () => {
-
             const homeSection = document.getElementById('home');
             const aboutSection = document.getElementById('about');
             const projectsSection = document.getElementById('projects');
             const contactSection = document.getElementById('contact');
             const scrollTop = window.scrollY;
             const offset = 700;
-            const projectOffset = 300;
-            if (document.documentElement.clientHeight >= 1032) {
-                setContactOffset(1000);
-            } else {
-                setContactOffset(700);
-            }
+            const calculateContactOffset = () => {
+                if (document.documentElement.clientHeight >= 1032) {
+                    setContactOffset(1000);
+                }
+            };
 
-            if (
-                scrollTop >= homeSection.offsetTop &&
-                scrollTop < projectsSection.offsetTop - projectOffset
-            ) {
+            calculateContactOffset(); // Call the function to set the initial contact offset
+            console.log(contactOffset);
+            const isInViewport = (element, offset = 0) => {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= -offset &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + offset &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            };
+
+            if (isInViewport(homeSection)) {
                 updateActiveTab('home');
-            } else if (
-                scrollTop >= projectsSection.offsetTop - offset &&
-                scrollTop < aboutSection.offsetTop - offset
-            ) {
+            } else if (isInViewport(projectsSection, 700)) {
                 updateActiveTab('projects');
-            } else if (
-                scrollTop >= aboutSection.offsetTop - offset &&
-                scrollTop < contactSection.offsetTop - contactOffset
-            ) {
+            } else if (isInViewport(aboutSection, offset) &&
+                scrollTop < contactSection.offsetTop - contactOffset) {
                 updateActiveTab('about');
             } else if (scrollTop >= contactSection.offsetTop - contactOffset) {
                 updateActiveTab('contact');
             }
         };
+
 
         window.addEventListener('scroll', handleScroll);
         handleScroll(); // Initial call
@@ -82,12 +85,10 @@ export const TabProvider = ({ children }) => {
     }, [activeTab, contactOffset]);
 
 
-    //was causing issues before
     useEffect(() => {
         const newActiveTabHistory = JSON.stringify(activeTabHistory);
         if (sessionStorage.getItem('activeTabHistory') !== newActiveTabHistory) {
             sessionStorage.setItem('activeTab', activeTab);
-            sessionStorage.setItem('activeTabHistory', newActiveTabHistory);
         }
     }, [activeTab, activeTabHistory]);
 
