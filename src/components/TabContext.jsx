@@ -52,7 +52,6 @@ export const TabProvider = ({ children }) => {
             };
 
             calculateContactOffset(); // Call the function to set the initial contact offset
-            console.log(contactOffset);
             const isInViewport = (element, offset = 0) => {
                 const rect = element.getBoundingClientRect();
                 return (
