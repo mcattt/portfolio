@@ -37,21 +37,27 @@ export const TabProvider = ({ children }) => {
     // Initialize hasBeenActive based on activeTabHistory
     const hasBeenActive = initializeHasBeenActive(activeTab);
 
+
+    const calculateContactOffset = () => {
+        if (document.documentElement.clientHeight >= 1032) {
+            setContactOffset(1000);
+        }
+    };
+
+
     useEffect(() => {
+        calculateContactOffset(); // Call the function to set the initial contact offset
         const handleScroll = () => {
             const homeSection = document.getElementById('home');
             const aboutSection = document.getElementById('about');
             const projectsSection = document.getElementById('projects');
             const contactSection = document.getElementById('contact');
             const scrollTop = window.scrollY;
-            const offset = 700;
-            const calculateContactOffset = () => {
-                if (document.documentElement.clientHeight >= 1032) {
-                    setContactOffset(1000);
-                }
-            };
+            const offset = 1000;
 
-            calculateContactOffset(); // Call the function to set the initial contact offset
+
+
+
             const isInViewport = (element, offset = 0) => {
                 const rect = element.getBoundingClientRect();
                 return (
@@ -64,12 +70,13 @@ export const TabProvider = ({ children }) => {
 
             if (isInViewport(homeSection)) {
                 updateActiveTab('home');
-            } else if (isInViewport(projectsSection, 700)) {
+            } else if (isInViewport(projectsSection, offset)) {
                 updateActiveTab('projects');
-            } else if (isInViewport(aboutSection, offset) &&
-                scrollTop < contactSection.offsetTop - contactOffset) {
+            } else if (isInViewport(aboutSection, offset)) {
                 updateActiveTab('about');
-            } else if (scrollTop >= contactSection.offsetTop - contactOffset) {
+            }
+
+            if (scrollTop >= contactSection.offsetTop - contactOffset) {
                 updateActiveTab('contact');
             }
         };
