@@ -1,6 +1,7 @@
 import React from "react";
 import Accordion from "./Accordion";
 import ImageCarousel from "./ImageCarousel";
+import { useMediaQuery } from "@react-hook/media-query";
 
 
 
@@ -70,6 +71,7 @@ const renderGitHubButton = (item) => {
 
 
 export const CarouselItem = ({ item }) => {
+    const isDesktop = useMediaQuery("(min-width:900px)");
 
     const formattedTools = formatTools(item.tools);
 
@@ -97,13 +99,17 @@ export const CarouselItem = ({ item }) => {
             <div className="max-w-[450px] desktop:max-w-[800px] 
     bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start pt-[1px] px-[1px]     transition-all duration-500        ">
                 <div className="text-xl desktop:text-3xl bg-background  py-[2px] pl-2 pr-4 mt-[-1px] mx-[-1px] mb-[1px]">
-                    <Accordion title="Details" content={item.details} />
+                    {isDesktop
+                        ? <Accordion title="Details" content={item.details} isOpen={true} />
+                        : <Accordion title="Details" content={item.details} isOpen={false} />
+                    }
+
                 </div>
             </div>
             <div className=" max-w-[450px] desktop:max-w-[800px] 
     bg-gradient-to-r from-gradient-2-start via-gradient-1-end to-gradient-2-end p-[1px]  ">
                 <div className="text-xl desktop:text-3xl bg-background pl-2 pr-4 py-[2px] px-1 mx-[-1px]">
-                    <Accordion title="Highlights" content={item.highlights} />
+                    <Accordion title="Highlights" content={item.highlights} isOpen={false} />
                 </div>
             </div>
 

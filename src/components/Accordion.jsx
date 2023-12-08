@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import downArrow from "../assets/images/arrow-down.png";
-const Accordion = ({ title, content }) => {
-    const [isActive, setIsActive] = useState(false);
+const Accordion = ({ title, content, isOpen }) => {
+    const [isActive, setIsActive] = useState(isOpen);
 
     return (
         <div className='whitespace-normal' >
