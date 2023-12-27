@@ -53,7 +53,7 @@ export const TabProvider = ({ children }) => {
             const projectsSection = document.getElementById('projects');
             const contactSection = document.getElementById('contact');
             const scrollTop = window.scrollY;
-            const offset = 1000;
+            const offset = 600;
 
 
 
