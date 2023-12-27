@@ -10,7 +10,7 @@ const items = [
     {
         title: "Movie Database",
         tools: ["react", "tailwind", "vite"],
-        description: "MovieClip is a website created by myself and two classmates. It's a dynamic movie database built using React and the TMDB API, focusing on user-friendly features and responsive design.",
+        description: "MovieClip is a dynamic movie database built using React and the TMDB API, focusing on user-friendly features and responsive design.",
         img: [imgDataBase01, imgDataBase02],
         liveSiteButton: "https://catcordner.ca/movieclip/",
         gitHubButton: "https://github.com/mcattt/Movie-DB",
@@ -48,7 +48,7 @@ const items = [
     {
         title: "Crust & Crumb",
         tools: ["wordpress", "woocommerce", "sass"],
-        description: "An E-Commerce website for local bakery Crust & Crumb done with a team of four, made using WordPress with WooCommerce integration.",
+        description: "An E-Commerce website for local bakery Crust & Crumb done with a team of five, made using WordPress with WooCommerce integration.",
         img: [imgcrustAndCrumb1, imgcrustAndCrumb2],
         liveSiteButton: "https://catcordner.ca/crustandcrumb/",
         gitHubButton: "https://github.com/mcattt/crust-crumb",
