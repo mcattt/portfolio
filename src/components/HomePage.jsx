@@ -34,7 +34,7 @@ const HomePage = ({ }) => {
                     cursor-default font-extradica animate-text desktop:animate-gradient
                     text-transparent bg-clip-text  transition-all duration-500 text-white bg-size-200 bg-pos-0 desktop:hover:bg-pos-100"
                 >
-                    Front-End Web
+                    Software
                     Developer
                 </h2>
 

@@ -3,10 +3,8 @@ import { useTabContext } from './TabContext';
 import Carousel from './Carousel';
 const Projects = () => {
     const { activeTab, activeTabHistory } = useTabContext();
-
     const hasBeenActive = activeTabHistory['projects'];
-
-
+    
     return (
         <article
             id="projects"

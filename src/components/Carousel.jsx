@@ -48,7 +48,7 @@ const items = [
     {
         title: "Crust & Crumb",
         tools: ["wordpress", "woocommerce", "sass"],
-        description: "An E-Commerce website for local bakery Crust & Crumb done with a team of five, made using WordPress with WooCommerce integration.",
+        description: "An E-Commerce website for local bakery Crust & Crumb, made using WordPress with WooCommerce integration.",
         img: [imgcrustAndCrumb1, imgcrustAndCrumb2],
         liveSiteButton: "https://catcordner.ca/crustandcrumb/",
         gitHubButton: "https://github.com/mcattt/crust-crumb",

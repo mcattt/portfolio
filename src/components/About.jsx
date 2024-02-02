@@ -30,12 +30,12 @@ const About = () => {
                     <div className={`mt-10 duration-1000 transition-all ${hasBeenActive ? 'translate-y-0 opacity-100 delay-200' : 'translate-x-[-1rem] opacity-0'}`}>
                         <div className="mx-auto px-3 text-base desktop:text-lg breakpoint-1080:text-xl breakpoint-1200:text-2xl font-light">
                             <p className='mb-3 breakpoint-1200:mb-5'>
-                                Hello! I'm Cat, a recent grad from the Front-End Web Developer Program at BCIT.
+                                Hello! I'm Cat, a Software Developer from Vancouver, BC.
                             </p>
                             <p className='mb-3 breakpoint-1200:mb-5'>
-                                As a kid, my dream job was to be a video-game designer (though now I'd rather just play them) so I knew I wanted to do something in tech as a career.</p>
+                                I am skilled in both back-end and front-end languages, from taking computer science classes at Langara College and being a recent grad from the Front-End Web Developer Program at BCIT. While my primary focus lies in JavaScript, I also possess proficiency in a range of other languages including C++, Java, PHP, and more. </p>
                             <p className='mb-3 breakpoint-1200:mb-5'>
-                                Before I went to BCIT, I was in the Computer Science program at Langara College where I learned some back-end languages, such as C++ and Java. Having this previous knowledge has really helped me with problem solving and logic for the projects I work on in Web Development.</p>
+                                As a kid, my dream job was to be a video-game designer so I’ve always wanted to be in tech and be apart of creating cool things! </p>
                             <p className='mb-3 breakpoint-1200:mb-5'>
                                 In my free time, I enjoy gaming (which I like to think has helped my ability to work with a team).
                             </p>
@@ -44,7 +44,7 @@ const About = () => {
                     </div>
                 </section>
                 <section id="about-skills" className={`transition-all duration-1000 ${hasBeenActive ? 'translate-y-0 opacity-100 delay-500' : 'translate-x-4 opacity-0'}`}>
-                    <p className='text-3xl mt-10 mb-10 mx-auto text-center breakpoint-1080:mt-36'>My Skillset</p>
+                    <p className='text-3xl mt-10 mb-10 mx-auto text-center breakpoint-1080:mt-36'>My Tech Stack</p>
                     <div className="grid grid-cols-3 breakpoint-450:grid-cols-4 mx-auto breakpoint-560:flex breakpoint-560:gap-5 px-2 breakpoint-560:justify-center max-w-[650px] flex-wrap  gap-y-1 gap-x-1  content-center items-center  ">
                         {skills.map((skill) => (
                             <div key={skill.name} className=" cursor-default flex flex-col justify-center items-center  gap-1 breakpoint-560:text-lg text-base font-[500] desktop:hover:translate-y-[-2px] duration-150">
