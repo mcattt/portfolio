@@ -30,7 +30,7 @@ const About = () => {
                     <div className={`mt-10 duration-1000 transition-all ${hasBeenActive ? 'translate-y-0 opacity-100 delay-200' : 'translate-x-[-1rem] opacity-0'}`}>
                         <div className="mx-auto px-3 text-base desktop:text-lg breakpoint-1080:text-xl breakpoint-1200:text-2xl font-light">
                             <p className='mb-3 breakpoint-1200:mb-5'>
-                                Hello! I'm Cat, a Software Developer from Vancouver, BC.
+                                Hello! I'm Cat, a Front-End Developer from Vancouver, BC.
                             </p>
                             <p className='mb-3 breakpoint-1200:mb-5'>
                                 I am skilled in both back-end and front-end languages, from taking computer science classes at Langara College and being a recent grad from the Front-End Web Developer Program at BCIT. While my primary focus lies in JavaScript, I also possess proficiency in a range of other languages including C++, Java, PHP, and more. </p>
