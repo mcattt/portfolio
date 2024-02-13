@@ -1,6 +1,4 @@
 import React from "react";
-import Accordion from "./Accordion";
-import ImageCarousel from "./ImageCarousel";
 import { useMediaQuery } from "@react-hook/media-query";
 
 
@@ -71,49 +69,32 @@ const renderGitHubButton = (item) => {
 
 
 export const CarouselItem = ({ item }) => {
-    const isDesktop = useMediaQuery("(min-width:900px)");
+    // const isDesktop = useMediaQuery("(min-width:900px)");
 
     const formattedTools = formatTools(item.tools);
 
     return <section className="inline-flex flex-col justify-center w-[100%] z-[-9999] px-3 ">
 
         <section className=" desktop:grid desktop:grid-cols-2 ">
-            <div className="mb-5 whitespace-normal desktop:col-start-2 desktop:ml-6  mx-auto">
-                <h2 className=" font-light   text-3xl desktop:text-4xl">{item.title}</h2>
-                <div className="italic text-base desktop:text-lg">{formattedTools}</div>
-            </div>
-            <div className=" desktop:col-start-1 desktop:row-start-1 desktop:row-span-2 max-w-[1000px]  ">
-                <ImageCarousel item={item} />
-                <div className="flex justify-evenly my-6 text-[16px] desktop:mb-0 desktop:mt-12 desktop:text-lg ">
+            <div className="mb-1 whitespace-normal desktop:col-start-2 desktop:ml-6  mx-auto">
+                <h2 className=" font-light   text-2xl desktop:text-4xl">{item.title}</h2>
 
-                    {renderLiveSiteButton(item)}
-                    {renderGitHubButton(item)}
-                </div>
             </div>
-            <div className=" whitespace-normal mb-4 desktop:row-span-2 desktop:col-start-2 desktop:ml-6 desktop:mb-0 breakpoint-1200:mt-10 mx-auto">
+            <div className=" desktop:col-start-1 desktop:row-start-1 desktop:row-span-2 max-w-[1000px] shadow-[0_0_6px_6px_rgba(255,255,255,0.05)] ">
+                <img src={item.img} />
+
+            </div>
+            <div className=" whitespace-normal my-4  mx-auto">
                 <p className="font-light text-base desktop:text-xl breakpoint-1200:text-2xl">{item.description}</p>
+                <div className="flex justify-evenly mx-10 mt-2 italic text-base desktop:text-lg  text-center ">{formattedTools}</div>
             </div>
+            <div className="flex justify-evenly my-6 text-[16px] desktop:mb-0 desktop:mt-12 desktop:text-lg ">
 
+                {renderLiveSiteButton(item)}
+                {renderGitHubButton(item)}
+            </div>
         </section>
-        <section className="mx-auto pb-10 ">
-            <div className="max-w-[450px] desktop:max-w-[800px] 
-    bg-gradient-to-r from-gradient-1-start via-gradient-1-end to-gradient-2-start pt-[1px] px-[1px]     transition-all duration-500        ">
-                <div className="text-xl desktop:text-3xl bg-background  py-[2px] pl-2 pr-4 mt-[-1px] mx-[-1px] mb-[1px]">
-                    {isDesktop
-                        ? <Accordion title="Details" content={item.details} isOpen={true} />
-                        : <Accordion title="Details" content={item.details} isOpen={false} />
-                    }
 
-                </div>
-            </div>
-            <div className=" max-w-[450px] desktop:max-w-[800px] 
-    bg-gradient-to-r from-gradient-2-start via-gradient-1-end to-gradient-2-end p-[1px]  ">
-                <div className="text-xl desktop:text-3xl bg-background pl-2 pr-4 py-[2px] px-1 mx-[-1px]">
-                    <Accordion title="Highlights" content={item.highlights} isOpen={false} />
-                </div>
-            </div>
-
-        </section>
 
     </section >
 }

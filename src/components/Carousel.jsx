@@ -11,7 +11,7 @@ const items = [
         title: "Movie Database",
         tools: ["react", "tailwind", "vite"],
         description: "MovieClip is a dynamic movie database built using React and the TMDB API, focusing on user-friendly features and responsive design.",
-        img: [imgDataBase01, imgDataBase02],
+        img: imgDataBase01,
         liveSiteButton: "https://catcordner.ca/movieclip/",
         gitHubButton: "https://github.com/mcattt/Movie-DB",
         details: (
@@ -49,7 +49,7 @@ const items = [
         title: "Crust & Crumb",
         tools: ["wordpress", "woocommerce", "sass"],
         description: "An E-Commerce website for local bakery Crust & Crumb, made using WordPress with WooCommerce integration.",
-        img: [imgcrustAndCrumb1, imgcrustAndCrumb2],
+        img: imgcrustAndCrumb1,
         liveSiteButton: "https://catcordner.ca/crustandcrumb/",
         gitHubButton: "https://github.com/mcattt/crust-crumb",
         details: (
@@ -96,7 +96,7 @@ const items = [
         title: "The Pokemon Name Game",
         tools: ["javascript", " css3", "html5"],
         description: "A simple Pokemon name guessing game, where you pick the generation and try to guess which Pokemon it could be.",
-        img: [imgGame01, imgGame02],
+        img: imgGame01,
         liveSiteButton: "https://catcordner.ca/game/",
         gitHubButton: "https://github.com/mcattt/guess-that-pokemon-name",
         details: (
@@ -127,96 +127,23 @@ const items = [
     },
 ]
 
-const isActive = (num, activeIndex) => {
-    if (num === activeIndex) {
-        return <span className="text-white">{num + 1}</span>;
-    } else {
-        return <span className="text-black">{num + 1}</span>;
-    }
-};
+
 
 export const Carousel = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [touchStart, setTouchStart] = useState(0);
-
-    const handleTouchStart = (e) => {
-        setTouchStart(e.touches[0].clientX);
-    };
-
-    const handleTouchMove = (e) => {
-        const touchEnd = e.touches[0].clientX;
-        const touchDiff = touchEnd - touchStart;
-
-        if (touchDiff > 50) {
-            // Swipe right
-            updateIndex(activeIndex - 1);
-            setTouchStart(touchEnd); // Update touchStart to prevent continuous updates
-        } else if (touchDiff < -50) {
-            // Swipe left
-            updateIndex(activeIndex + 1);
-            setTouchStart(touchEnd); // Update touchStart to prevent continuous updates
-        }
-    };
-
-    const updateIndex = (newIndex) => {
-        const lastIndex = items.length - 1;
-
-        if (newIndex < 0) {
-            newIndex = lastIndex;
-        } else if (newIndex > lastIndex) {
-            newIndex = 0;
-        }
-
-        setActiveIndex(newIndex);
-    };
 
     return (
         <section
-            className="flex flex-col justify-center overflow-hidden"
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
+            className=""
         >
-            <div className="mb-4 desktop:mb-16 flex">
-                {items.map((item, index) => (
-                    <button
-                        role="active project indicator"
-                        aria-label={`Go to next project`}
-                        key={index}
-                        onClick={() => setActiveIndex(index)}
-                        className={`breakpoint-560:mb-0 flex w-2 h-2 text-[8px] transition-width justify-center items-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex
-                            ? "bg-gradient-1-start w-[80px] h-[25px]"
-                            : "bg-gray-400 w-[25px] h-[25px]"
-                            }`}
-                    >
-                        {isActive(index, activeIndex)}
-                    </button>
-                ))}
-            </div>
+            
             <div
-                className="whitespace-nowrap transition transform duration-500 mt-3"
-                style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+                className=" mt-3"
             >
                 {items.map((item, index) => (
                     <CarouselItem key={index} item={item} />
                 ))}
             </div>
-            <div className="mb-16 flex justify-center">
-                {items.map((item, index) => (
-                    <button
-                        key={index}
-                        role="active project button"
-                        aria-label={`Go to slide ${index + 1}`}
-
-                        onClick={() => setActiveIndex(index)}
-                        className={`breakpoint-560:mb-0 flex w-2 h-2 text-[8px]  self-center rounded-full border-none cursor-pointer m-[2px] bg-none ${index === activeIndex
-                            ? "bg-gradient-1-start w-[18px] h-[18px]"
-                            : "bg-gray-400 w-[15px] h-[15px]"
-                            }`}
-                    >
-
-                    </button>
-                ))}
-            </div>
+      
         </section>
     );
 };
